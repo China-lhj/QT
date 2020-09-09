@@ -358,6 +358,8 @@ void Widget::on_weight_pushButton_1_clicked()
         break;
     case 1:
     {
+        QString temp = QString::number(dou);
+
         if(index_2 == 0)        // 1磅 = 0.454千克
             dou = dou * 0.454;
         if(index_2 == 1)        // 1磅 = 454克
@@ -374,11 +376,14 @@ void Widget::on_weight_pushButton_1_clicked()
             dou = dou * 454000;
         // double->Qstring
         str = QString::number(dou);
+        ui->weight_lineEdit_1->setText(temp);
         ui->weight_lineEdit_2->setText(str);
     }
         break;
     case 2:
     {
+        QString temp = QString::number(dou);
+
         if(index_2 == 0)        // 1盎司 = 0.02835千克
             dou = dou * 0.02835;
         if(index_2 == 1)        // 1盎司 = 28.35克
@@ -395,11 +400,14 @@ void Widget::on_weight_pushButton_1_clicked()
             dou = dou * 28350;
         // double->Qstring
         str = QString::number(dou);
+        ui->weight_lineEdit_1->setText(temp);
         ui->weight_lineEdit_2->setText(str);
     }
         break;
     case 3:
     {
+        QString temp = QString::number(dou);
+
         if(index_2 == 0)        // 1英吨 = 1020千克
             dou = dou * 1020;
         if(index_2 == 1)        // 1英吨 = 1020000克
@@ -416,11 +424,14 @@ void Widget::on_weight_pushButton_1_clicked()
             dou = dou * 1020000000;
         // double->Qstring
         str = QString::number(dou);
+        ui->weight_lineEdit_1->setText(temp);
         ui->weight_lineEdit_2->setText(str);
     }
         break;
     case 4:
     {
+        QString temp = QString::number(dou);
+
         if(index_2 == 0)        // 1美吨 = 910千克
             dou = dou * 910;
         if(index_2 == 1)        // 1美吨 = 910000克
@@ -437,11 +448,14 @@ void Widget::on_weight_pushButton_1_clicked()
             dou = dou * 910000000;
         // double->Qstring
         str = QString::number(dou);
+        ui->weight_lineEdit_1->setText(temp);
         ui->weight_lineEdit_2->setText(str);
     }
         break;
     case 5:
     {
+        QString temp = QString::number(dou);
+
         if(index_2 == 0)        // 1打兰 = 0.00177千克
             dou = dou * 0.00177;
         if(index_2 == 1)        // 1打兰 = 1.77克
@@ -458,11 +472,14 @@ void Widget::on_weight_pushButton_1_clicked()
             dou = dou * 1770;
         // double->Qstring
         str = QString::number(dou);
+        ui->weight_lineEdit_1->setText(temp);
         ui->weight_lineEdit_2->setText(str);
     }
         break;
     case 6:
     {
+        QString temp = QString::number(dou);
+
         if(index_2 == 0)        // 1格令 = 0.000064千克
             dou = dou * 0.000064;
         if(index_2 == 1)        // 1格令 = 0.064克
@@ -479,11 +496,14 @@ void Widget::on_weight_pushButton_1_clicked()
             dou = dou * 64;
         // double->Qstring
         str = QString::number(dou);
+        ui->weight_lineEdit_1->setText(temp);
         ui->weight_lineEdit_2->setText(str);
     }
         break;
     case 7:
     {
+        QString temp = QString::number(dou);
+
         if(index_2 == 0)        // 1克拉 = 0.000205千克
             dou = dou * 0.000205;
         if(index_2 == 1)        // 1克拉 = 0.205克
@@ -500,6 +520,7 @@ void Widget::on_weight_pushButton_1_clicked()
             dou = dou * 205;
         // double->Qstring
         str = QString::number(dou);
+        ui->weight_lineEdit_1->setText(temp);
         ui->weight_lineEdit_2->setText(str);
     }
         break;
@@ -513,6 +534,8 @@ void Widget::on_weight_pushButton_1_clicked()
         break;
     case 9:
     {
+        QString temp = QString::number(dou);
+
         if(index_2 == 0)        // 1市担 = 50千克
             dou = dou * 50;
         if(index_2 == 1)        // 1市担 = 50000克
@@ -529,11 +552,14 @@ void Widget::on_weight_pushButton_1_clicked()
             dou = dou * 50000000;
         // double->Qstring
         str = QString::number(dou);
+        ui->weight_lineEdit_1->setText(temp);
         ui->weight_lineEdit_2->setText(str);
     }
         break;
     case 10:
     {
+        QString temp = QString::number(dou);
+
         if(index_2 == 0)        // 1市斤 = 0.5千克
             dou = dou * 0.5;
         if(index_2 == 1)        // 1市斤 = 500克
@@ -550,11 +576,14 @@ void Widget::on_weight_pushButton_1_clicked()
             dou = dou * 500000;
         // double->Qstring
         str = QString::number(dou);
+        ui->weight_lineEdit_1->setText(temp);
         ui->weight_lineEdit_2->setText(str);
     }
         break;
     case 11:
     {
+        QString temp = QString::number(dou);
+
         if(index_2 == 0)        // 1市两 = 0.05千克
             dou = dou * 0.05;
         if(index_2 == 1)        // 1市两 = 50克
@@ -571,11 +600,14 @@ void Widget::on_weight_pushButton_1_clicked()
             dou = dou * 50000;
         // double->Qstring
         str = QString::number(dou);
+        ui->weight_lineEdit_1->setText(temp);
         ui->weight_lineEdit_2->setText(str);
     }
         break;
     case 12:
     {
+        QString temp = QString::number(dou);
+
         if(index_2 == 0)        // 1市钱 = 0.005千克
             dou = dou * 0.005;
         if(index_2 == 1)        // 1市钱 = 5克
@@ -592,11 +624,14 @@ void Widget::on_weight_pushButton_1_clicked()
             dou = dou * 5000;
         // double->Qstring
         str = QString::number(dou);
+        ui->weight_lineEdit_1->setText(temp);
         ui->weight_lineEdit_2->setText(str);
     }
         break;
     case 13:
     {
+        QString temp = QString::number(dou);
+
         if(index_2 == 0)        // 1市厘 = 0.00005千克
             dou = dou * 0.00005;
         if(index_2 == 1)        // 1市厘 = 0.05克
@@ -613,11 +648,14 @@ void Widget::on_weight_pushButton_1_clicked()
             dou = dou * 50;
         // double->Qstring
         str = QString::number(dou);
+        ui->weight_lineEdit_1->setText(temp);
         ui->weight_lineEdit_2->setText(str);
     }
         break;
     case 14:
     {
+        QString temp = QString::number(dou);
+
         if(index_2 == 0)        // 1市毫 = 0.000005千克
             dou = dou * 0.000005;
         if(index_2 == 1)        // 1市毫 = 0.005克
@@ -634,11 +672,14 @@ void Widget::on_weight_pushButton_1_clicked()
             dou = dou * 5;
         // double->Qstring
         str = QString::number(dou);
+        ui->weight_lineEdit_1->setText(temp);
         ui->weight_lineEdit_2->setText(str);
     }
         break;
     case 15:
     {
+        QString temp = QString::number(dou);
+
         if(index_2 == 0)        // 1市丝 = 0.0000005千克
             dou = dou * 0.0000005;
         if(index_2 == 1)        // 1市丝 = 0.0005克
@@ -655,6 +696,7 @@ void Widget::on_weight_pushButton_1_clicked()
             dou = dou * 0.5;
         // double->Qstring
         str = QString::number(dou);
+        ui->weight_lineEdit_1->setText(temp);
         ui->weight_lineEdit_2->setText(str);
     }
         break;
@@ -674,6 +716,8 @@ void Widget::on_weight_pushButton_2_clicked()
     switch (index_2) {
     case 0:
     {
+        QString temp = QString::number(dou);
+
         if(index_1 == 0)
         {
             dou = dou * 0;
@@ -720,10 +764,12 @@ void Widget::on_weight_pushButton_2_clicked()
             dou = dou * 2000000;
         str = QString::number(dou);
         ui->weight_lineEdit_1->setText(str);
+        ui->weight_lineEdit_2->setText(temp);
     }
         break;
     case 1:
     {
+        QString temp = QString::number(dou);
         if(index_1 == 0)
         {
             dou = dou * 0;
@@ -770,10 +816,13 @@ void Widget::on_weight_pushButton_2_clicked()
             dou = dou * 2000;
         str = QString::number(dou);
         ui->weight_lineEdit_1->setText(str);
+        ui->weight_lineEdit_2->setText(temp);
     }
         break;
     case 2:
     {
+        QString temp = QString::number(dou);
+
         if(index_1 == 0)
         {
             dou = dou * 0;
@@ -820,10 +869,13 @@ void Widget::on_weight_pushButton_2_clicked()
             dou = dou * 2000000000;
         str = QString::number(dou);
         ui->weight_lineEdit_1->setText(str);
+        ui->weight_lineEdit_2->setText(temp);
     }
         break;
     case 3:
     {
+        QString temp = QString::number(dou);
+
         if(index_1 == 0)
         {
             dou = dou * 0;
@@ -870,10 +922,12 @@ void Widget::on_weight_pushButton_2_clicked()
             dou = dou * 200000000;
         str = QString::number(dou);
         ui->weight_lineEdit_1->setText(str);
+        ui->weight_lineEdit_2->setText(temp);
     }
         break;
     case 4:
     {
+        QString temp = QString::number(dou);
         if(index_1 == 0)
         {
             dou = dou * 0;
@@ -920,10 +974,12 @@ void Widget::on_weight_pushButton_2_clicked()
             dou = dou * 0.2;
         str = QString::number(dou);
         ui->weight_lineEdit_1->setText(str);
+        ui->weight_lineEdit_2->setText(temp);
     }
         break;
     case 5:
     {
+        QString temp = QString::number(dou);
         if(index_1 == 0)
         {
             dou = dou * 0;
@@ -970,10 +1026,13 @@ void Widget::on_weight_pushButton_2_clicked()
             dou = dou * 0.02;
         str = QString::number(dou);
         ui->weight_lineEdit_1->setText(str);
+        ui->weight_lineEdit_2->setText(temp);
     }
         break;
     case 6:
     {
+        QString temp = QString::number(dou);
+
         if(index_1 == 0)
         {
             dou = dou * 0;
@@ -1020,6 +1079,7 @@ void Widget::on_weight_pushButton_2_clicked()
             dou = dou * 0.002;
         str = QString::number(dou);
         ui->weight_lineEdit_1->setText(str);
+        ui->weight_lineEdit_2->setText(temp);
     }
         break;
     default:
@@ -1029,12 +1089,825 @@ void Widget::on_weight_pushButton_2_clicked()
 
 void Widget::on_length_pushButton_1_clicked()
 {
+    QString str;
+    str = ui->length_lineEdit_1->text();
+    double dou = str.toDouble();
+    int index_1 = ui->length_comboBox_1->currentIndex();
+    int index_2 = ui->length_comboBox_2->currentIndex();
 
+    switch (index_1) {
+    case 0:
+    {
+        QString temp = QString::number(dou);
+        dou = dou * 0;
+        str = QString::number(dou);
+        ui->length_lineEdit_1->setText(temp);
+        ui->length_lineEdit_2->setText(str);
+    }
+        break;
+    case 1:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0 )       // 1英寸 == 0.0000254千米
+            dou = dou * 0.0000254;
+        if(index_2 == 1)        // 1英寸 == 0.0254米
+            dou = dou * 0.0254;
+        if(index_2 == 2)        // 1英寸 == 0.0000137海里
+            dou = dou * 0.0000137;
+        if(index_2 == 3)        // 1英寸 == 0.254分米
+            dou = dou * 0.254;
+        if(index_2 == 4)        // 1英寸 == 2.54厘米
+            dou = dou * 2.54;
+        if(index_2 == 5)        // 1英寸 == 25.4毫米
+            dou = dou * 25.4;
+        if(index_2 == 6)        // 1英寸 == 254丝米
+            dou = dou * 254;
+        if(index_2 == 7)        // 1英寸 == 2540忽米
+            dou = dou * 2540;
+        if(index_2 == 8)        // 1英寸 == 25400微米
+            dou = dou * 25400;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_1->setText(temp);
+        ui->length_lineEdit_2->setText(str);
+    }
+        break;
+    case 2:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0 )       // 1英尺 = 0.0003084千米
+            dou = dou * 0.0003084;
+        if(index_2 == 1)        // 1英尺 = 0.3084米
+            dou = dou * 0.3084;
+        if(index_2 == 2)        // 1英尺 = 0.0001646海里
+            dou = dou * 0.0001646;
+        if(index_2 == 3)        // 1英尺 = 3.084分米
+            dou = dou * 3.084;
+        if(index_2 == 4)        // 1英尺 = 30.84厘米
+            dou = dou * 30.84;
+        if(index_2 == 5)        // 1英尺 = 308.4毫米
+            dou = dou * 308.4;
+        if(index_2 == 6)        // 1英尺 = 3084丝米
+            dou = dou * 3084;
+        if(index_2 == 7)        // 1英尺 = 30840丝米
+            dou = dou * 30840;
+        if(index_2 == 8)        // 1英尺 = 308400微米
+            dou = dou * 308400;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_1->setText(temp);
+        ui->length_lineEdit_2->setText(str);
+    }
+        break;
+    case 3:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0 )       // 1码 = 0.0009144千米
+            dou = dou * 0.0009144;
+        if(index_2 == 1)        // 1码 = 0.9144米
+            dou = dou * 0.9144;
+        if(index_2 == 2)        // 1码 = 0.0004937海里
+            dou = dou * 0.0004937;
+        if(index_2 == 3)        // 1码 = 9.144分米
+            dou = dou * 9.144;
+        if(index_2 == 4)        // 1码 = 91.4厘米
+            dou = dou * 91.44;
+        if(index_2 == 5)        // 1码 = 914.4毫米
+            dou = dou * 914.4;
+        if(index_2 == 6)        // 1码 = 9144丝米
+            dou = dou * 9144;
+        if(index_2 == 7)        // 1码 = 91440忽米
+            dou = dou * 91440;
+        if(index_2 == 8)        // 1码 = 914400微米
+            dou = dou * 914400;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_1->setText(temp);
+        ui->length_lineEdit_2->setText(str);
+    }
+        break;
+    case 4:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0 )       // 1英里 = 1.609344千米
+            dou = dou * 1.609344;
+        if(index_2 == 1)        // 1英里 = 1609.344米
+            dou = dou * 1609.344;
+        if(index_2 == 2)        // 1英里 = 0.8689762海里
+            dou = dou * 0.8689762;
+        if(index_2 == 3)        // 1英里 = 16093.44分米
+            dou = dou * 16093.44;
+        if(index_2 == 4)        // 1英里 = 160934.4厘米
+            dou = dou * 160934.4;
+        if(index_2 == 5)        // 1英里 = 160934毫米
+            dou = dou * 1609344;
+        if(index_2 == 6)        // 1英里 = 1.6093440丝米
+            dou = dou * 16093440;
+        if(index_2 == 7)        // 1英里 = 1.60934400忽米
+            dou = dou * 160934400;
+        if(index_2 == 8)        // 1英里 = 1.60934400微米
+            dou = dou * 1609344000;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_1->setText(temp);
+        ui->length_lineEdit_2->setText(str);
+    }
+        break;
+    case 5:
+    {
+        QString temp = QString::number(dou);
+
+        dou = dou * 0;
+        str = QString::number(dou);
+        ui->length_lineEdit_1->setText(str);
+        ui->length_lineEdit_2->setText(str);
+    }
+        break;
+    case 6:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0 )       // 1市里 == 0.5千米
+            dou = dou * 0.5;
+        if(index_2 == 1)        // 1市里 == 500米
+            dou = dou * 500;
+        if(index_2 == 2)        // 1市里 == 0.2699784海里
+            dou = dou * 0.2699784;
+        if(index_2 == 3)        // 1市里 == 5000分米
+            dou = dou * 5000;
+        if(index_2 == 4)        // 1市里 == 50000厘米
+            dou = dou * 50000;
+        if(index_2 == 5)        // 1市里 == 500000毫米
+            dou = dou * 500000;
+        if(index_2 == 6)        // 1市里 == 5000000丝米
+            dou = dou * 5000000;
+        if(index_2 == 7)        // 1市里 == 50000000忽米
+            dou = dou * 50000000;
+        if(index_2 == 8)        // 1市里 == 500000000微米
+            dou = dou * 500000000;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_1->setText(temp);
+        ui->length_lineEdit_2->setText(str);
+    }
+        break;
+    case 7:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0 )       // 1市引 == 0.0333333千米
+            dou = dou * 0.0333333;
+        if(index_2 == 1)        // 1市引 == 33.333333米
+            dou = dou * 33.333333;
+        if(index_2 == 2)        // 1市引 == 0.0179999海里
+            dou = dou * 0.0179999;
+        if(index_2 == 3)        // 1市引 == 333.33333分米
+            dou = dou * 333.33333;
+        if(index_2 == 4)        // 1市引 == 3333.3333厘米
+            dou = dou * 3333.3333;
+        if(index_2 == 5)        // 1市引 == 33333.333毫米
+            dou = dou * 33333.333;
+        if(index_2 == 6)        // 1市引 == 333333.33丝米
+            dou = dou * 333333.33;
+        if(index_2 == 7)        // 1市引 == 3333333.3忽米
+            dou = dou * 3333333.3;
+        if(index_2 == 8)        // 1市引 == 333333333微米
+            dou = dou * 333333333;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_1->setText(temp);
+        ui->length_lineEdit_2->setText(str);
+    }
+        break;
+    case 8:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0 )       // 1市丈 == 0.0033333千米
+            dou = dou * 0.0033333;
+        if(index_2 == 1)        // 1市丈 == 3.3333333米
+            dou = dou * 3.3333333;
+        if(index_2 == 2)        // 1市丈 == 0.0017999海里
+            dou = dou * 0.0017999;
+        if(index_2 == 3)        // 1市丈 == 33.333333分米
+            dou = dou * 33.333333;
+        if(index_2 == 4)        // 1市丈 == 333.33333厘米
+            dou = dou * 333.33333;
+        if(index_2 == 5)        // 1市丈 == 3333.3333毫米
+            dou = dou * 3333.3333;
+        if(index_2 == 6)        // 1市丈 == 33333.333丝米
+            dou = dou * 33333.333;
+        if(index_2 == 7)        // 1市丈 == 333333.33忽米
+            dou = dou * 333333.33;
+        if(index_2 == 8)        // 1市丈 == 3333333.3微米
+            dou = dou * 3333333.3;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_1->setText(temp);
+        ui->length_lineEdit_2->setText(str);
+    }
+        break;
+    case 9:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0 )       // 1市尺 = 0.0003333千米
+            dou = dou * 0.0003333;
+        if(index_2 == 1)        // 1市尺 = 0.3333333米
+            dou = dou * 0.3333333;
+        if(index_2 == 2)        // 1市尺 = 0.0001799海里
+            dou = dou * 0.0001799;
+        if(index_2 == 3)        // 1市尺 = 3.3333333分米
+            dou = dou * 3.3333333;
+        if(index_2 == 4)        // 1市尺 = 33.333333厘米
+            dou = dou * 33.333333;
+        if(index_2 == 5)        // 1市尺 = 333.33333毫米
+            dou = dou * 333.33333;
+        if(index_2 == 6)        // 1市尺 = 3333.3333丝米
+            dou = dou * 3333.3333;
+        if(index_2 == 7)        // 1市尺 = 33333.333忽米
+            dou = dou * 33333.333;
+        if(index_2 == 8)        // 1市尺 = 333333.33微米
+            dou = dou * 333333.33;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_1->setText(temp);
+        ui->length_lineEdit_2->setText(str);
+    }
+        break;
+    case 10:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0 )       // 1市尺 = 0.00003333千米
+            dou = dou * 0.00003333;
+        if(index_2 == 1)        // 1市尺 = 0.03333333米
+            dou = dou * 0.03333333;
+        if(index_2 == 2)        // 1市尺 = 0.00001799海里
+            dou = dou * 0.00001799;
+        if(index_2 == 3)        // 1市尺 = 0.33333333分米
+            dou = dou * 0.33333333;
+        if(index_2 == 4)        // 1市尺 = 3.33333333厘米
+            dou = dou * 3.33333333;
+        if(index_2 == 5)        // 1市尺 = 33.3333333毫米
+            dou = dou * 33.3333333;
+        if(index_2 == 6)        // 1市尺 = 333.333333丝米
+            dou = dou * 333.333333;
+        if(index_2 == 7)        // 1市尺 = 3333.33333忽米
+            dou = dou * 3333.33333;
+        if(index_2 == 8)        // 1市尺 = 33333.3333微米
+            dou = dou * 33333.3333;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_1->setText(temp);
+        ui->length_lineEdit_2->setText(str);
+    }
+        break;
+    case 11:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0 )       // 1市尺 = 0.00003333千米
+            dou = dou * 0.00000333;
+        if(index_2 == 1)        // 1市尺 = 0.03333333米
+            dou = dou * 0.00333333;
+        if(index_2 == 2)        // 1市尺 = 0.00000179海里
+            dou = dou * 0.00000179;
+        if(index_2 == 3)        // 1市尺 = 0.03333333分米
+            dou = dou * 0.03333333;
+        if(index_2 == 4)        // 1市尺 = 0.33333333厘米
+            dou = dou * 0.33333333;
+        if(index_2 == 5)        // 1市尺 = 3.33333333毫米
+            dou = dou * 3.33333333;
+        if(index_2 == 6)        // 1市尺 = 33.3333333丝米
+            dou = dou * 33.3333333;
+        if(index_2 == 7)        // 1市尺 = 333.333333忽米
+            dou = dou * 333.333333;
+        if(index_2 == 8)        // 1市尺 = 3333.33333微米
+            dou = dou * 3333.33333;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_1->setText(temp);
+        ui->length_lineEdit_2->setText(str);
+    }
+        break;
+    case 12:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0 )       // 1市尺 = 0.000000333千米
+            dou = dou * 0.000000333;
+        if(index_2 == 1)        // 1市尺 = 0.000333333米
+            dou = dou * 0.000333333;
+        if(index_2 == 2)        // 1市尺 = 0.000000179海里
+            dou = dou * 0.000000179;
+        if(index_2 == 3)        // 1市尺 = 0.003333333分米
+            dou = dou * 0.003333333;
+        if(index_2 == 4)        // 1市尺 = 0.033333333厘米
+            dou = dou * 0.033333333;
+        if(index_2 == 5)        // 1市尺 = 0.333333333毫米
+            dou = dou * 0.333333333;
+        if(index_2 == 6)        // 1市尺 = 3.333333333丝米
+            dou = dou * 3.33333333;
+        if(index_2 == 7)        // 1市尺 = 33.33333333忽米
+            dou = dou * 33.3333333;
+        if(index_2 == 8)        // 1市尺 = 333.3333333微米
+            dou = dou * 333.333333;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_1->setText(temp);
+        ui->length_lineEdit_2->setText(str);
+    }
+        break;
+    case 13:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0 )       // 1市尺 = 0.0000000333千米
+            dou = dou * 0.0000000333;
+        if(index_2 == 1)        // 1市尺 = 0.0000333333米
+            dou = dou * 0.0000333333;
+        if(index_2 == 2)        // 1市尺 = 0.0000000179海里
+            dou = dou * 0.0000000179;
+        if(index_2 == 3)        // 1市尺 = 0.0003333333分米
+            dou = dou * 0.0003333333;
+        if(index_2 == 4)        // 1市尺 = 0.0033333333厘米
+            dou = dou * 0.0033333333;
+        if(index_2 == 5)        // 1市尺 = 0.0333333333毫米
+            dou = dou * 0.0333333333;
+        if(index_2 == 6)        // 1市尺 = 0.3333333333丝米
+            dou = dou * 0.3333333333;
+        if(index_2 == 7)        // 1市尺 = 3.3333333333忽米
+            dou = dou * 3.3333333333;
+        if(index_2 == 8)        // 1市尺 = 33.333333333微米
+            dou = dou * 33.333333333;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_1->setText(temp);
+        ui->length_lineEdit_2->setText(str);
+    }
+        break;
+    default:
+        break;
+    }
 }
 
 void Widget::on_length_pushButton_2_clicked()
 {
-
+    QString str;
+    str = ui->length_lineEdit_2->text();
+    double dou = str.toDouble();
+    int index_1 = ui->length_comboBox_1->currentIndex();
+    int index_2 = ui->length_comboBox_2->currentIndex();
+    switch (index_2) {
+    case 0:
+    {
+        QString temp = QString::number(dou);
+        if(index_1 == 0)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->length_lineEdit_1->setText(str);
+            ui->length_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 1)        // 1千米 = 39370.0787402英寸
+            dou = dou * 39370.0787402;
+        if(index_1 == 2)        // 1千米 = 3280.8398950英尺
+            dou = dou * 3280.8398950;
+        if(index_1 == 3)        // 1千米 = 1093.6132983码
+            dou = dou * 1093.6132983;
+        if(index_1 == 4)        // 1千米 = 0.6213712英里
+            dou = dou * 0.6213712;
+        if(index_1 == 5)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->length_lineEdit_1->setText(str);
+            ui->length_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 6)        // 1千米 = 2市里
+            dou = dou * 2;
+        if(index_1 == 7)        // 1千米 = 30市引
+            dou = dou * 30;
+        if(index_1 == 8)        // 1千米 = 300市丈
+            dou = dou * 300;
+        if(index_1 == 9)        // 1千米 = 3000市尺
+            dou = dou * 3000;
+        if(index_1 == 10)       // 1千米 = 30000市寸
+            dou = dou * 30000;
+        if(index_1 == 11)       // 1千米 = 300000市分
+            dou = dou * 300000;
+        if(index_1 == 12)       // 1千米 = 3000000市厘
+            dou = dou * 3000000;
+        if(index_1 == 13)       // 1千米 = 30000000市毫
+            dou = dou * 30000000;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_2->setText(temp);
+        ui->length_lineEdit_1->setText(str);
+    }
+        break;
+    case 1:
+    {
+        QString temp = QString::number(dou);
+        if(index_1 == 0)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->length_lineEdit_1->setText(str);
+            ui->length_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 1)        // 1米 = 39.3700787英寸
+            dou = dou * 39.3700787;
+        if(index_1 == 2)        // 1米 = 3.28083989英尺
+            dou = dou * 3.28083989;
+        if(index_1 == 3)        // 1米 = 1.09361329码
+            dou = dou * 1.09361329;
+        if(index_1 == 4)        // 1米 = 0.0006213712英里
+            dou = dou * 0.00062137;
+        if(index_1 == 5)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->length_lineEdit_1->setText(str);
+            ui->length_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 6)        // 1米 = 0.002市里
+            dou = dou * 0.002;
+        if(index_1 == 7)        // 1米 = 0.03市引
+            dou = dou * 0.03;
+        if(index_1 == 8)        // 1米 = 0.3市丈
+            dou = dou * 0.3;
+        if(index_1 == 9)        // 1米 = 3市尺
+            dou = dou * 3;
+        if(index_1 == 10)       // 1米 = 30市寸
+            dou = dou * 30;
+        if(index_1 == 11)       // 1米 = 300市分
+            dou = dou * 300;
+        if(index_1 == 12)       // 1米 = 3000市厘
+            dou = dou * 3000;
+        if(index_1 == 13)       // 1米 = 30000市毫
+            dou = dou * 30000;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_2->setText(temp);
+        ui->length_lineEdit_1->setText(str);
+    }
+        break;
+    case 2:
+    {
+        QString temp = QString::number(dou);
+        if(index_1 == 0)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->length_lineEdit_1->setText(str);
+            ui->length_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 1)        // 1海里 = 72913.3858268英寸
+            dou = dou * 72913.3858268;
+        if(index_1 == 2)        // 1海里 = 6067.1154856英尺
+            dou = dou * 6067.1154856;
+        if(index_1 == 3)        // 1海里 = 2025.3718285码
+            dou = dou * 2025.3718285;
+        if(index_1 == 4)        // 1海里 = 1.1507794英里
+            dou = dou * 1.1507794;
+        if(index_1 == 5)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->length_lineEdit_1->setText(str);
+            ui->length_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 6)        // 1海里 = 3.704市里
+            dou = dou * 3.704;
+        if(index_1 == 7)        // 1海里 = 55.56市引
+            dou = dou * 55.56;
+        if(index_1 == 8)        // 1海里 = 555.6市丈
+            dou = dou * 555.6;
+        if(index_1 == 9)        // 1海里 = 5556市尺
+            dou = dou * 5556;
+        if(index_1 == 10)       // 1海里 = 55560市寸
+            dou = dou * 55560;
+        if(index_1 == 11)       // 1海里 = 555600市分
+            dou = dou * 555600;
+        if(index_1 == 12)       // 1海里 = 5556000市厘
+            dou = dou * 5556000;
+        if(index_1 == 13)       // 1海里 = 55560000市毫
+            dou = dou * 55560000;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_2->setText(temp);
+        ui->length_lineEdit_1->setText(str);
+    }
+        break;
+    case 3:
+    {
+        QString temp = QString::number(dou);
+        if(index_1 == 0)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->length_lineEdit_1->setText(str);
+            ui->length_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 1)        // 1分米 = 3.93700787英寸
+            dou = dou * 3.93700787;
+        if(index_1 == 2)        // 1分米 = 0.328083989英尺
+            dou = dou * 0.328083989;
+        if(index_1 == 3)        // 1分米 = 0.109361329码
+            dou = dou * 0.109361329;
+        if(index_1 == 4)        // 1分米 = 0.00006213712英里
+            dou = dou * 0.000062137;
+        if(index_1 == 5)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->length_lineEdit_1->setText(str);
+            ui->length_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 6)        // 1分米 = 0.0002市里
+            dou = dou * 0.0002;
+        if(index_1 == 7)        // 1分米 = 0.003市引
+            dou = dou * 0.003;
+        if(index_1 == 8)        // 1分米 = 0.03市丈
+            dou = dou * 0.03;
+        if(index_1 == 9)        // 1分米 = 0.3市尺
+            dou = dou * 0.3;
+        if(index_1 == 10)       // 1分米 = 3市寸
+            dou = dou * 3;
+        if(index_1 == 11)       // 1分米 = 30市分
+            dou = dou * 30;
+        if(index_1 == 12)       // 1分米 = 300市厘
+            dou = dou * 300;
+        if(index_1 == 13)       // 1分米 = 3000市毫
+            dou = dou * 3000;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_2->setText(temp);
+        ui->length_lineEdit_1->setText(str);
+    }
+        break;
+    case 4:
+    {
+        QString temp = QString::number(dou);
+        if(index_1 == 0)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->length_lineEdit_1->setText(str);
+            ui->length_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 1)        // 1厘米 = 0.393700787英寸
+            dou = dou * 0.393700787;
+        if(index_1 == 2)        // 1厘米 = 0.0328083989英尺
+            dou = dou * 0.0328083989;
+        if(index_1 == 3)        // 1厘米 = 0.0109361329码
+            dou = dou * 0.0109361329;
+        if(index_1 == 4)        // 1厘米 = 0.000006213712英里
+            dou = dou * 0.0000062137;
+        if(index_1 == 5)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->length_lineEdit_1->setText(str);
+            ui->length_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 6)        // 1厘米 = 0.00002市里
+            dou = dou * 0.00002;
+        if(index_1 == 7)        // 1厘米 = 0.0003市引
+            dou = dou * 0.0003;
+        if(index_1 == 8)        // 1厘米 = 0.003市丈
+            dou = dou * 0.003;
+        if(index_1 == 9)        // 1厘米 = 0.03市尺
+            dou = dou * 0.03;
+        if(index_1 == 10)       // 1厘米 = 0.3市寸
+            dou = dou * 0.3;
+        if(index_1 == 11)       // 1厘米 = 3市分
+            dou = dou * 3;
+        if(index_1 == 12)       // 1厘米 = 30市厘
+            dou = dou * 30;
+        if(index_1 == 13)       // 1厘米 = 300市毫
+            dou = dou * 300;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_2->setText(temp);
+        ui->length_lineEdit_1->setText(str);
+    }
+        break;
+    case 5:
+    {
+        QString temp = QString::number(dou);
+        if(index_1 == 0)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->length_lineEdit_1->setText(str);
+            ui->length_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 1)        // 1毫米 = 0.0393700787英寸
+            dou = dou * 0.0393700787;
+        if(index_1 == 2)        // 1毫米 = 0.00328083989英尺
+            dou = dou * 0.00328083989;
+        if(index_1 == 3)        // 1毫米 = 0.00109361329码
+            dou = dou * 0.00109361329;
+        if(index_1 == 4)        // 1毫米 = 0.0000006213712英里
+            dou = dou * 0.00000062137;
+        if(index_1 == 5)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->length_lineEdit_1->setText(str);
+            ui->length_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 6)        // 1毫米 = 0.000002市里
+            dou = dou * 0.000002;
+        if(index_1 == 7)        // 1毫米 = 0.00003市引
+            dou = dou * 0.00003;
+        if(index_1 == 8)        // 1毫米 = 0.0003市丈
+            dou = dou * 0.0003;
+        if(index_1 == 9)        // 1毫米 = 0.003市尺
+            dou = dou * 0.003;
+        if(index_1 == 10)       // 1毫米 = 0.03市寸
+            dou = dou * 0.03;
+        if(index_1 == 11)       // 1毫米 = 0.3市分
+            dou = dou * 0.3;
+        if(index_1 == 12)       // 1毫米 = 3市厘
+            dou = dou * 3;
+        if(index_1 == 13)       // 1毫米 = 30市毫
+            dou = dou * 30;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_2->setText(temp);
+        ui->length_lineEdit_1->setText(str);
+    }
+        break;
+    case 6:
+    {
+        QString temp = QString::number(dou);
+        if(index_1 == 0)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->length_lineEdit_1->setText(str);
+            ui->length_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 1)        // 1丝米 = 0.00393700787英寸
+            dou = dou * 0.00393700787;
+        if(index_1 == 2)        // 1丝米 = 0.000328083989英尺
+            dou = dou * 0.000328083989;
+        if(index_1 == 3)        // 1丝米 = 0.000109361329码
+            dou = dou * 0.000109361329;
+        if(index_1 == 4)        // 1丝米 = 0.00000006213712英里
+            dou = dou * 0.000000062137;
+        if(index_1 == 5)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->length_lineEdit_1->setText(str);
+            ui->length_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 6)        // 1丝米 = 0.0000002市里
+            dou = dou * 0.0000002;
+        if(index_1 == 7)        // 1丝米 = 0.000003市引
+            dou = dou * 0.000003;
+        if(index_1 == 8)        // 1丝米 = 0.00003市丈
+            dou = dou * 0.00003;
+        if(index_1 == 9)        // 1丝米 = 0.0003市尺
+            dou = dou * 0.0003;
+        if(index_1 == 10)       // 1丝米 = 0.003市寸
+            dou = dou * 0.003;
+        if(index_1 == 11)       // 1丝米 = 0.03市分
+            dou = dou * 0.03;
+        if(index_1 == 12)       // 1丝米 = 0.3市厘
+            dou = dou * 0.3;
+        if(index_1 == 13)       // 1丝米 = 3市毫
+            dou = dou * 3;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_2->setText(temp);
+        ui->length_lineEdit_1->setText(str);
+    }
+        break;
+    case 7:
+    {
+        QString temp = QString::number(dou);
+        if(index_1 == 0)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->length_lineEdit_1->setText(str);
+            ui->length_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 1)        // 1忽米 = 0.000393700787英寸
+            dou = dou * 0.000393700787;
+        if(index_1 == 2)        // 1忽米 = 0.0000328083989英尺
+            dou = dou * 0.0000328083989;
+        if(index_1 == 3)        // 1忽米 = 0.0000109361329码
+            dou = dou * 0.0000109361329;
+        if(index_1 == 4)        // 1忽米 = 0.000000006213712英里
+            dou = dou * 0.0000000062137;
+        if(index_1 == 5)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->length_lineEdit_1->setText(str);
+            ui->length_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 6)        // 1忽米 = 0.00000002市里
+            dou = dou * 0.00000002;
+        if(index_1 == 7)        // 1忽米 = 0.0000003市引
+            dou = dou * 0.0000003;
+        if(index_1 == 8)        // 1忽米 = 0.000003市丈
+            dou = dou * 0.000003;
+        if(index_1 == 9)        // 1忽米 = 0.00003市尺
+            dou = dou * 0.00003;
+        if(index_1 == 10)       // 1忽米 = 0.0003市寸
+            dou = dou * 0.0003;
+        if(index_1 == 11)       // 1忽米 = 0.003市分
+            dou = dou * 0.003;
+        if(index_1 == 12)       // 1忽米 = 0.03市厘
+            dou = dou * 0.03;
+        if(index_1 == 13)       // 1忽米 = 0.3市毫
+            dou = dou * 0.3;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_2->setText(temp);
+        ui->length_lineEdit_1->setText(str);
+    }
+        break;
+    case 8:
+    {
+        QString temp = QString::number(dou);
+        if(index_1 == 0)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->length_lineEdit_1->setText(str);
+            ui->length_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 1)        // 1微米 = 0.0000393700787英寸
+            dou = dou * 0.0000393700787;
+        if(index_1 == 2)        // 1微米 = 0.00000328083989英尺
+            dou = dou * 0.00000328083989;
+        if(index_1 == 3)        // 1微米 = 0.00000109361329码
+            dou = dou * 0.00000109361329;
+        if(index_1 == 4)        // 1微米 = 0.0000000006213712英里
+            dou = dou * 0.00000000062137;
+        if(index_1 == 5)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->length_lineEdit_1->setText(str);
+            ui->length_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 6)        // 1微米 = 0.000000002市里
+            dou = dou * 0.000000002;
+        if(index_1 == 7)        // 1微米 = 0.00000003市引
+            dou = dou * 0.00000003;
+        if(index_1 == 8)        // 1微米 = 0.0000003市丈
+            dou = dou * 0.0000003;
+        if(index_1 == 9)        // 1微米 = 0.000003市尺
+            dou = dou * 0.000003;
+        if(index_1 == 10)       // 1微米 = 0.00003市寸
+            dou = dou * 0.00003;
+        if(index_1 == 11)       // 1微米 = 0.0003市分
+            dou = dou * 0.0003;
+        if(index_1 == 12)       // 1微米 = 0.003市厘
+            dou = dou * 0.003;
+        if(index_1 == 13)       // 1微米 = 0.03市毫
+            dou = dou * 0.03;
+        // double->Qstring
+        str = QString::number(dou);
+        ui->length_lineEdit_2->setText(temp);
+        ui->length_lineEdit_1->setText(str);
+    }
+        break;
+    default:
+        break;
+    }
 }
 
 void Widget::on_area_pushButton_1_clicked()
