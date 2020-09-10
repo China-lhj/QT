@@ -1098,10 +1098,9 @@ void Widget::on_length_pushButton_1_clicked()
     switch (index_1) {
     case 0:
     {
-        QString temp = QString::number(dou);
         dou = dou * 0;
         str = QString::number(dou);
-        ui->length_lineEdit_1->setText(temp);
+        ui->length_lineEdit_1->setText(str);
         ui->length_lineEdit_2->setText(str);
     }
         break;
@@ -1219,8 +1218,6 @@ void Widget::on_length_pushButton_1_clicked()
         break;
     case 5:
     {
-        QString temp = QString::number(dou);
-
         dou = dou * 0;
         str = QString::number(dou);
         ui->length_lineEdit_1->setText(str);
@@ -1912,40 +1909,1727 @@ void Widget::on_length_pushButton_2_clicked()
 
 void Widget::on_area_pushButton_1_clicked()
 {
+    QString str;
+    str = ui->area_lineEdit_1->text();
+    double dou = str.toDouble();
+    int index_1 = ui->area_comboBox_1->currentIndex();
+    int index_2 = ui->area_comboBox_2->currentIndex();
+    switch(index_1)
+    {
+    case 0:
+    {
+        dou = dou * 0;
+        str = QString::number(dou);
+        ui->area_lineEdit_1->setText(str);
+        ui->area_lineEdit_2->setText(str);
+    }
+        break;
+    case 1:
+    {
+        QString temp = QString::number(dou);
 
+        if(index_2 == 0)        // 1平方英里 = 258.998811公顷
+            dou = dou * 258.998811;
+        if(index_2 == 1)        // 1平方英里 = 25899.8811034公亩
+            dou = dou * 25899.8811034;
+        if(index_2 == 2)        // 1平方英里 = 2.5899881平方公里
+            dou = dou * 2.5899881;
+        if(index_2 == 3)        // 1平方英里 = 2589988.110336平方米
+            dou = dou * 2589988.110336;
+        if(index_2 == 4)        // 1平方英里 = 258998811.0336平方分米
+            dou = dou * 258998811.0336;
+        if(index_2 == 5)        // 1平方英里 = 25899881103.36平方厘米
+            dou = dou * 25899881103.36;
+        // double->QString
+        str = QString::number(dou);
+        ui->area_lineEdit_1->setText(temp);
+        ui->area_lineEdit_2->setText(str);
+    }
+        break;
+    case 2:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1平方英寸 = 0.000000064516公顷
+            dou = dou * 0.000000064516;
+        if(index_2 == 1)        // 1平方英寸 = 0.0000064516公亩
+            dou = dou * 0.0000064516;
+        if(index_2 == 2)        // 1平方英寸 = 0.00000000064516平方公里
+            dou = dou * 0.00000000064516;
+        if(index_2 == 3)        // 1平方英寸 = 0.0006452平方米
+            dou = dou * 0.0006452;
+        if(index_2 == 4)        // 1平方英寸 = 0.064516平方分米
+            dou = dou * 0.064516;
+        if(index_2 == 5)        // 1平方英寸 = 6.4516平方厘米
+            dou = dou * 6.4516;
+        // double->QString
+        str = QString::number(dou);
+        ui->area_lineEdit_1->setText(temp);
+        ui->area_lineEdit_2->setText(str);
+    }
+        break;
+    case 3:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1平方英尺 = 0.0000092903公顷
+            dou = dou * 0.0000092903;
+        if(index_2 == 1)        // 1平方英尺 = 0.000929公亩
+            dou = dou * 0.000929;
+        if(index_2 == 2)        // 1平方英尺 = 0.000000092903平方公里
+            dou = dou * 0.000000092903;
+        if(index_2 == 3)        // 1平方英尺 = 0.092903平方米
+            dou = dou * 0.092903;
+        if(index_2 == 4)        // 1平方英尺 = 9.290304平方分米
+            dou = dou * 9.290304;
+        if(index_2 == 5)        // 1平方英尺 = 929.0304平方厘米
+            dou = dou * 929.0304;
+        // double->QString
+        str = QString::number(dou);
+        ui->area_lineEdit_1->setText(temp);
+        ui->area_lineEdit_2->setText(str);
+    }
+        break;
+    case 4:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1平方码 = 0.0000836公顷
+            dou = dou * 0.0000836;
+        if(index_2 == 1)        // 1平方码 = 0.0083613公亩
+            dou = dou * 0.0083613;
+        if(index_2 == 2)        // 1平方码 = 0.00000083613平方公里
+            dou = dou * 0.00000083613;
+        if(index_2 == 3)        // 1平方码 = 0.8361274平方米
+            dou = dou * 0.8361274;
+        if(index_2 == 4)        // 1平方码 = 83.612736平方分米
+            dou = dou * 83.612736;
+        if(index_2 == 5)        // 1平方码 = 8361.2736平方厘米
+            dou = dou * 8361.2736;
+        // double->QString
+        str = QString::number(dou);
+        ui->area_lineEdit_1->setText(temp);
+        ui->area_lineEdit_2->setText(str);
+    }
+        break;
+    case 5:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1英亩 = 0.4046856公顷
+            dou = dou * 0.4046856;
+        if(index_2 == 1)        // 1英亩 = 40.4685642公亩
+            dou = dou * 40.4685642;
+        if(index_2 == 2)        // 1英亩 = 0.0040469平方公里
+            dou = dou * 0.0040469;
+        if(index_2 == 3)        // 1英亩 = 4046.8564224平方米
+            dou = dou * 4046.8564224;
+        if(index_2 == 4)        // 1英亩 = 404685.64224平方分米
+            dou = dou * 404685.64224;
+        if(index_2 == 5)        // 1英亩 = 40468564.224平方厘米
+            dou = dou * 40468564.224;
+        // double->QString
+        str = QString::number(dou);
+        ui->area_lineEdit_1->setText(temp);
+        ui->area_lineEdit_2->setText(str);
+    }
+        break;
+    case 6:
+    {
+        dou = dou * 0;
+        str = QString::number(dou);
+        ui->area_lineEdit_1->setText(str);
+        ui->area_lineEdit_2->setText(str);
+    }
+        break;
+    case 7:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1市顷 = 6.6666667公顷
+            dou = dou * 6.6666667;
+        if(index_2 == 1)        // 1市顷 = 666.6666667公亩
+            dou = dou * 666.6666667;
+        if(index_2 == 2)        // 1市顷 = 0.0666667平方公里
+            dou = dou * 0.0666667;
+        if(index_2 == 3)        // 1市顷 = 66666.6666667平方米
+            dou = dou * 66666.6666667;
+        if(index_2 == 4)        // 1市顷 = 6666666.666667平方分米
+            dou = dou * 6666666.666667;
+        if(index_2 == 5)        // 1市顷 = 666666666.6667平方厘米
+            dou = dou * 666666666.6667;
+        // double->QString
+        str = QString::number(dou);
+        ui->area_lineEdit_1->setText(temp);
+        ui->area_lineEdit_2->setText(str);
+    }
+        break;
+    case 8:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1英亩 = 0.0666667公顷
+            dou = dou * 0.0666667;
+        if(index_2 == 1)        // 1英亩 = 6.6666667公亩
+            dou = dou * 6.6666667;
+        if(index_2 == 2)        // 1英亩 = 0.0006667平方公里
+            dou = dou * 0.0006667;
+        if(index_2 == 3)        // 1英亩 = 666.6666667平方米
+            dou = dou * 666.6666667;
+        if(index_2 == 4)        // 1英亩 = 66666.6666667平方分米
+            dou = dou * 66666.6666667;
+        if(index_2 == 5)        // 1英亩 = 6666666.666667平方厘米
+            dou = dou * 6666666.666667;
+        // double->QString
+        str = QString::number(dou);
+        ui->area_lineEdit_1->setText(temp);
+        ui->area_lineEdit_2->setText(str);
+    }
+        break;
+    case 9:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1英分 = 0.0066667公顷
+            dou = dou * 0.0066667;
+        if(index_2 == 1)        // 1英分 = 0.6666667公亩
+            dou = dou * 0.6666667;
+        if(index_2 == 2)        // 1英分 = 0.0000667平方公里
+            dou = dou * 0.0000667;
+        if(index_2 == 3)        // 1英分 = 66.6666667平方米
+            dou = dou * 66.6666667;
+        if(index_2 == 4)        // 1英分 = 6666.6666667平方分米
+            dou = dou * 6666.6666667;
+        if(index_2 == 5)        // 1英分 = 666666.6666667平方厘米
+            dou = dou * 666666.6666667;
+        // double->QString
+        str = QString::number(dou);
+        ui->area_lineEdit_1->setText(temp);
+        ui->area_lineEdit_2->setText(str);
+    }
+        break;
+    case 10:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1平方市尺 = 0.0000111公顷
+            dou = dou * 0.0000111;
+        if(index_2 == 1)        // 1平方市尺 = 0.0011111公亩
+            dou = dou * 0.0011111;
+        if(index_2 == 2)        // 1平方市尺 = 0.000000111平方公里
+            dou = dou * 0.000000111;
+        if(index_2 == 3)        // 1平方市尺 = 0.1111111平方米
+            dou = dou * 0.1111111;
+        if(index_2 == 4)        // 1平方市尺 = 11.1111111平方分米
+            dou = dou * 11.1111111;
+        if(index_2 == 5)        // 1平方市尺 = 1111.1111111平方厘米
+            dou = dou * 1111.1111111;
+        // double->QString
+        str = QString::number(dou);
+        ui->area_lineEdit_1->setText(temp);
+        ui->area_lineEdit_2->setText(str);
+    }
+        break;
+    default:
+        break;
+    }
 }
 
 void Widget::on_area_pushButton_2_clicked()
 {
-
+    QString str;
+    str = ui->area_lineEdit_2->text();
+    double dou = str.toDouble();
+    int index_1 = ui->area_comboBox_1->currentIndex();
+    int index_2 = ui->area_comboBox_2->currentIndex();
+    switch (index_2)
+    {
+    case 0:
+    {
+        QString temp = QString::number(dou);
+        if(index_1 == 0)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->area_lineEdit_1->setText(str);
+            ui->area_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 1)        // 1公顷 = 0.003861平方英里
+            dou = dou * 0.003861;
+        if(index_1 == 2)        // 1公顷 = 15500031.00006平方英寸
+            dou = dou * 15500031.00006;
+        if(index_1 == 3)        // 1公顷 = 107639.1041671平方英尺
+            dou = dou * 107639.1041671;
+        if(index_1 == 4)        // 1公顷 = 11959.900463平方码
+            dou = dou * 11959.900463;
+        if(index_1 == 5)        // 1公顷 = 2.4710538英亩
+            dou = dou * 2.4710538;
+        if(index_1 == 6)        //以下为市值
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->area_lineEdit_1->setText(str);
+            ui->area_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 7)        // 1公顷 = 0.15市顷
+            dou = dou * 0.15;
+        if(index_1 == 8)        // 1公顷 = 15市亩
+            dou = dou * 15;
+        if(index_1 == 9)        // 1公顷 = 150市分
+            dou = dou * 150;
+        if(index_1 == 10)       // 1公顷 = 90000平方市尺
+            dou = dou * 90000;
+        // double->QString
+        str = QString::number(dou);
+        ui->area_lineEdit_1->setText(str);
+        ui->area_lineEdit_2->setText(temp);
+    }
+        break;
+    case 1:
+    {
+        QString temp = QString::number(dou);
+        if(index_1 == 0)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->area_lineEdit_1->setText(str);
+            ui->area_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 1)        // 1公亩 = 0.0000386平方英里
+            dou = dou * 0.0000386;
+        if(index_1 == 2)        // 1公亩 = 155000.3100006平方英寸
+            dou = dou * 155000.3100006;
+        if(index_1 == 3)        // 1公亩 = 1076.3910417平方英尺
+            dou = dou * 1076.3910417;
+        if(index_1 == 4)        // 1公亩 = 119.5990046平方码
+            dou = dou * 119.5990046;
+        if(index_1 == 5)        // 1公亩 = 0.0247105英亩
+            dou = dou * 0.0247105;
+        if(index_1 == 6)        //以下为市值
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->area_lineEdit_1->setText(str);
+            ui->area_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 7)        // 1公亩 = 0.0015市顷
+            dou = dou * 0.0015;
+        if(index_1 == 8)        // 1公亩 = 0.15市亩
+            dou = dou * 0.15;
+        if(index_1 == 9)        // 1公亩 = 1.5市分
+            dou = dou * 1.5;
+        if(index_1 == 10)       // 1公亩 = 900平方市尺
+            dou = dou * 900;
+        // double->QString
+        str = QString::number(dou);
+        ui->area_lineEdit_1->setText(str);
+        ui->area_lineEdit_2->setText(temp);
+    }
+        break;
+    case 2:
+    {
+        QString temp = QString::number(dou);
+        if(index_1 == 0)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->area_lineEdit_1->setText(str);
+            ui->area_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 1)        // 1平方公里 = 0.3861022平方英里
+            dou = dou * 0.3861022;
+        if(index_1 == 2)        // 1平方公里 = 1550003100.006平方英寸
+            dou = dou * 1550003100.006;
+        if(index_1 == 3)        // 1平方公里 = 10763910.41671平方英尺
+            dou = dou * 10763910.41671;
+        if(index_1 == 4)        // 1平方公里 = 1195990.046301平方码
+            dou = dou * 1195990.046301;
+        if(index_1 == 5)        // 1平方公里 = 247.1053815英亩
+            dou = dou * 247.1053815;
+        if(index_1 == 6)        //以下为市值
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->area_lineEdit_1->setText(str);
+            ui->area_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 7)        // 1平方公里 = 15市顷
+            dou = dou * 15;
+        if(index_1 == 8)        // 1平方公里 = 1500市亩
+            dou = dou * 1500;
+        if(index_1 == 9)        // 1平方公里 = 15000市分
+            dou = dou * 15000;
+        if(index_1 == 10)       // 1平方公里 = 9000000平方市尺
+            dou = dou * 9000000;
+        // double->QString
+        str = QString::number(dou);
+        ui->area_lineEdit_1->setText(str);
+        ui->area_lineEdit_2->setText(temp);
+    }
+        break;
+    case 3:
+    {
+        QString temp = QString::number(dou);
+        if(index_1 == 0)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->area_lineEdit_1->setText(str);
+            ui->area_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 1)        // 1平方米 = 0.00000038610平方英里
+            dou = dou * 0.00000038610;
+        if(index_1 == 2)        // 1平方米  = 1550.0031平方英寸
+            dou = dou * 1550.0031;
+        if(index_1 == 3)        // 1平方米  = 10.7639104平方英尺
+            dou = dou * 10.7639104;
+        if(index_1 == 4)        // 1平方米  = 1.19599平方码
+            dou = dou * 1.19599;
+        if(index_1 == 5)        // 1平方米  = 0.0002471英亩
+            dou = dou * 0.0002471;
+        if(index_1 == 6)        //以下为市值
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->area_lineEdit_1->setText(str);
+            ui->area_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 7)        // 1平方米  = 0.000015市顷
+            dou = dou * 0.000015;
+        if(index_1 == 8)        // 1平方米  = 0.0015市亩
+            dou = dou * 0.0015;
+        if(index_1 == 9)        // 1平方米  = 0.015市分
+            dou = dou * 0.015;
+        if(index_1 == 10)       // 1平方米  = 9平方市尺
+            dou = dou * 9;
+        // double->QString
+        str = QString::number(dou);
+        ui->area_lineEdit_1->setText(str);
+        ui->area_lineEdit_2->setText(temp);
+    }
+        break;
+    case 4:
+    {
+        QString temp = QString::number(dou);
+        if(index_1 == 0)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->area_lineEdit_1->setText(str);
+            ui->area_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 1)        // 1平方分米 = 0.0000000038610平方英里
+            dou = dou * 0.0000000038610;
+        if(index_1 == 2)        // 1平方分米 = 15.500031平方英寸
+            dou = dou * 15.500031;
+        if(index_1 == 3)        // 1平方分米 = 0.1076391平方英尺
+            dou = dou * 0.1076391;
+        if(index_1 == 4)        // 1平方分米 = 0.0119599平方码
+            dou = dou * 0.0119599;
+        if(index_1 == 5)        // 1平方分米 = 0.0000024711英亩
+            dou = dou * 0.0000024711;
+        if(index_1 == 6)        //以下为市值
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->area_lineEdit_1->setText(str);
+            ui->area_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 7)        // 1平方分米 = 0.00000015市顷
+            dou = dou * 0.00000015;
+        if(index_1 == 8)        // 1平方分米 = 0.000015市亩
+            dou = dou * 0.000015;
+        if(index_1 == 9)        // 1平方分米 = 0.00015市分
+            dou = dou * 0.00015;
+        if(index_1 == 10)       // 1平方分米 = 0.09平方市尺
+            dou = dou * 0.09;
+        // double->QString
+        str = QString::number(dou);
+        ui->area_lineEdit_1->setText(str);
+        ui->area_lineEdit_2->setText(temp);
+    }
+        break;
+    case 5:
+    {
+        QString temp = QString::number(dou);
+        if(index_1 == 0)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->area_lineEdit_1->setText(str);
+            ui->area_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 1)        // 1平方厘米 = 0.000000000038610平方英里
+            dou = dou * 0.000000000038610;
+        if(index_1 == 2)        // 1平方厘米 = 0.1550003平方英寸
+            dou = dou * 0.1550003;
+        if(index_1 == 3)        // 1平方厘米 = 0.0010764平方英尺
+            dou = dou * 0.0010764;
+        if(index_1 == 4)        // 1平方厘米 = 0.0001196平方码
+            dou = dou * 0.0001196;
+        if(index_1 == 5)        // 1平方厘米 = 0.000000024711英亩
+            dou = dou * 0.000000024711;
+        if(index_1 == 6)        //以下为市值
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->area_lineEdit_1->setText(str);
+            ui->area_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 7)        // 1平方厘米 = 0.0000000015市顷
+            dou = dou * 0.0000000015;
+        if(index_1 == 8)        // 1平方厘米 = 0.00000015市亩
+            dou = dou * 0.00000015;
+        if(index_1 == 9)        // 1平方厘米 = 0.0000015市分
+            dou = dou * 0.0000015;
+        if(index_1 == 10)       // 1平方厘米 = 0.0009平方市尺
+            dou = dou * 0.0009;
+        // double->QString
+        str = QString::number(dou);
+        ui->area_lineEdit_1->setText(str);
+        ui->area_lineEdit_2->setText(temp);
+    }
+        break;
+    default:
+        break;
+    }
 }
 
 void Widget::on_volume_pushButton_1_clicked()
 {
+    QString str;
+    str = ui->volume_lineEdit_1->text();
+    double dou = str.toDouble();
+    int index_1 = ui->volume_comboBox_1->currentIndex();
+    int index_2 = ui->volume_comboBox_2->currentIndex();
+    switch(index_1)
+    {
+    case 0:
+    {
+        dou = dou * 0;
+        str = QString::number(dou);
+        ui->volume_lineEdit_1->setText(str);
+        ui->volume_lineEdit_2->setText(str);
+    }
+        break;
+    case 1:
+    {
+        QString temp = QString::number(dou);
 
+        if(index_2 == 0)        // 1英制加仑 = 0.0045461立方米
+            dou = dou * 0.0045461;
+        if(index_2 == 1)        // 1英制加仑 = 4.5460919立方分米
+            dou = dou * 4.5460919;
+        if(index_2 == 2)        // 1英制加仑 = 4546.09188立方厘米
+            dou = dou * 4546.09188;
+        if(index_2 == 3)        // 1英制加仑 = 4.5460919升
+            dou = dou * 4.5460919;
+        if(index_2 == 4)        // 1英制加仑 = 4546.09188毫升
+            dou = dou * 4546.09188;
+        // double->QString
+        str = QString::number(dou);
+        ui->volume_lineEdit_1->setText(temp);
+        ui->volume_lineEdit_2->setText(str);
+    }
+        break;
+    case 2:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1美国液体加仑 = 0.00379立方米
+            dou = dou * 0.00379;
+        if(index_2 == 1)        // 1美国液体加仑 = 3.78541立方分米
+            dou = dou * 3.78541;
+        if(index_2 == 2)        // 1美国液体加仑 = 3785.41178立方厘米
+            dou = dou * 3785.41178;
+        if(index_2 == 3)        // 1美国液体加仑 = 3.78541升
+            dou = dou * 3.78541;
+        if(index_2 == 4)        // 1美国液体加仑 = 3785.41178毫升
+            dou = dou * 3785.41178;
+        // double->QString
+        str = QString::number(dou);
+        ui->volume_lineEdit_1->setText(temp);
+        ui->volume_lineEdit_2->setText(str);
+    }
+        break;
+    case 3:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1美国液体盎司 = 0.0000296立方米
+            dou = dou * 0.0000296;
+        if(index_2 == 1)        // 1美国液体盎司 = 0.02957立方分米
+            dou = dou * 0.02957;
+        if(index_2 == 2)        // 1美国液体盎司 = 29.57立方厘米
+            dou = dou * 29.57;
+        if(index_2 == 3)        // 1美国液体盎司 = 0.02957升
+            dou = dou * 0.02957;
+        if(index_2 == 4)        // 1美国液体盎司 = 29.57毫升
+            dou = dou * 29.57;
+        // double->QString
+        str = QString::number(dou);
+        ui->volume_lineEdit_1->setText(temp);
+        ui->volume_lineEdit_2->setText(str);
+    }
+        break;
+    case 4:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1立方英寸 = 0.0000164立方米
+            dou = dou * 0.0000164;
+        if(index_2 == 1)        // 1立方英寸  = 0.016387立方分米
+            dou = dou * 0.016387;
+        if(index_2 == 2)        // 1立方英寸 = 16.387037立方厘米
+            dou = dou * 16.387037;
+        if(index_2 == 3)        // 1立方英寸  = 0.016387升
+            dou = dou * 0.016387;
+        if(index_2 == 4)        // 1立方英寸  = 16.387037毫升
+            dou = dou * 16.387037;
+        // double->QString
+        str = QString::number(dou);
+        ui->volume_lineEdit_1->setText(temp);
+        ui->volume_lineEdit_2->setText(str);
+    }
+        break;
+    case 5:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1立方英尺 = 0.0283168立方米
+            dou = dou * 0.0283168;
+        if(index_2 == 1)        // 1立方英尺 = 28.3168立方分米
+            dou = dou * 28.3168;
+        if(index_2 == 2)        // 1立方英尺 = 28316.8立方厘米
+            dou = dou * 28316.8;
+        if(index_2 == 3)        // 1立方英尺 = 28.3168升
+            dou = dou * 28.3168;
+        if(index_2 == 4)        // 1立方英尺 = 28316.8毫升
+            dou = dou * 28316.8;
+        // double->QString
+        str = QString::number(dou);
+        ui->volume_lineEdit_1->setText(temp);
+        ui->volume_lineEdit_2->setText(str);
+    }
+        break;
+    case 6:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1立方码 = 0.7645536立方米
+            dou = dou * 0.7645536;
+        if(index_2 == 1)        // 1立方码 = 764.5536立方分米
+            dou = dou * 764.5536;
+        if(index_2 == 2)        // 1立方码 = 764553.6立方厘米
+            dou = dou * 764553.6;
+        if(index_2 == 3)        // 1立方码 = 764.5536升
+            dou = dou * 764.5536;
+        if(index_2 == 4)        // 1立方码 = 764553.6毫升
+            dou = dou * 764553.6;
+        // double->QString
+        str = QString::number(dou);
+        ui->volume_lineEdit_1->setText(temp);
+        ui->volume_lineEdit_2->setText(str);
+    }
+        break;
+    case 7:
+    {
+        dou = dou * 0;
+        str = QString::number(dou);
+        ui->volume_lineEdit_1->setText(str);
+        ui->volume_lineEdit_2->setText(str);
+    }
+        break;
+    case 8:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1立方市寸 = 0.000037036立方米
+            dou = dou * 0.000037036;
+        if(index_2 == 1)        // 1立方市寸 = 0.037036立方分米
+            dou = dou * 0.037036;
+        if(index_2 == 2)        // 1立方市寸 = 37.036立方厘米
+            dou = dou * 37.036;
+        if(index_2 == 3)        // 1立方市寸 = 0.037036升
+            dou = dou * 0.037036;
+        if(index_2 == 4)        // 1立方市寸 = 37.036毫升
+            dou = dou * 37.036;
+        // double->QString
+        str = QString::number(dou);
+        ui->volume_lineEdit_1->setText(temp);
+        ui->volume_lineEdit_2->setText(str);
+    }
+        break;
+    case 9:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1立方市尺 = 0.03703立方米
+            dou = dou * 0.03703;
+        if(index_2 == 1)        // 1立方市尺 = 37.03立方分米
+            dou = dou * 37.03;
+        if(index_2 == 2)        // 1立方市尺 = 37037.026立方厘米
+            dou = dou * 37037.026;
+        if(index_2 == 3)        // 1立方市尺 = 37.03升
+            dou = dou * 37.03;
+        if(index_2 == 4)        // 1立方市尺 = 37037.026毫升
+            dou = dou * 37037.026;
+        // double->QString
+        str = QString::number(dou);
+        ui->volume_lineEdit_1->setText(temp);
+        ui->volume_lineEdit_2->setText(str);
+    }
+        break;
+    case 10:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1立方市丈 = 37.0370359立方米
+            dou = dou * 37.0370359;
+        if(index_2 == 1)        // 1立方市丈 = 37037.035925926立方分米
+            dou = dou * 37037.035925926;
+        if(index_2 == 2)        // 1立方市丈 = 37037035.925926立方厘米
+            dou = dou * 37037035.925926;
+        if(index_2 == 3)        // 1立方市丈 = 37037.035925926升
+            dou = dou * 37037.035925926;
+        if(index_2 == 4)        // 1立方市丈 = 37037035.925926毫升
+            dou = dou * 37037035.925926;
+        // double->QString
+        str = QString::number(dou);
+        ui->volume_lineEdit_1->setText(temp);
+        ui->volume_lineEdit_2->setText(str);
+    }
+        break;
+    default:
+        break;
+    }
 }
 
 void Widget::on_volume_pushButton_2_clicked()
 {
+    QString str;
+    str = ui->volume_lineEdit_2->text();
+    double dou = str.toDouble();
+    int index_1 = ui->volume_comboBox_1->currentIndex();
+    int index_2 = ui->volume_comboBox_2->currentIndex();
+    switch (index_2)
+    {
+    case 0:
+    {
+        QString temp = QString::number(dou);
 
+        if(index_1 == 0)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->volume_lineEdit_1->setText(str);
+            ui->volume_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 1)        // 1立方米 = 219.9691573英国加仑
+            dou = dou * 219.9691573;
+        if(index_1 == 2)        // 1立方米 = 264.17205美国液体加仑
+            dou = dou * 264.17205;
+        if(index_1 == 3)        // 1立方米 = 33818.0588434美国液体盎司
+            dou = dou * 33818.0588434;
+        if(index_1 == 4)        // 1立方米 = 61023.8445022立方英寸
+            dou = dou * 61023.8445022;
+        if(index_1 == 5)        // 1立方米 = 35.3147248立方英尺
+            dou = dou * 35.3147248;
+        if(index_1 == 6)        // 1立方米 = 1.3079528立方码
+            dou = dou * 1.3079528;
+        if(index_1 == 7)        //以下为市值
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->volume_lineEdit_1->setText(str);
+            ui->volume_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 8)        // 1立方米 = 27000立方市寸
+            dou = dou * 27000;
+        if(index_1 == 9)        // 1立方米 = 27立方市尺
+            dou = dou * 27;
+        if(index_1 == 10)       // 1立方米 = 0.027立方市丈
+            dou = dou * 0.027;
+        // double->QString
+        str = QString::number(dou);
+        ui->volume_lineEdit_1->setText(str);
+        ui->volume_lineEdit_2->setText(temp);
+    }
+        break;
+    case 1:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_1 == 0)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->volume_lineEdit_1->setText(str);
+            ui->volume_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 1)        // 1立方分米 = 0.2199692英国加仑
+            dou = dou * 0.2199692;
+        if(index_1 == 2)        // 1立方分米 = 0.2641721美国液体加仑
+            dou = dou * 0.2641721;
+        if(index_1 == 3)        // 1立方分米 = 33.8180588美国液体盎司
+            dou = dou * 33.8180588;
+        if(index_1 == 4)        // 1立方分米 = 61.0238445立方英寸
+            dou = dou * 61.0238445;
+        if(index_1 == 5)        // 1立方分米 = 0.0353147立方英尺
+            dou = dou * 0.0353147;
+        if(index_1 == 6)        // 1立方分米 = 0.001308立方码
+            dou = dou * 0.001308;
+        if(index_1 == 7)        //以下为市值
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->volume_lineEdit_1->setText(str);
+            ui->volume_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 8)        // 1立方分米 = 27立方市寸
+            dou = dou * 27;
+        if(index_1 == 9)        // 1立方分米 = 0.027立方市尺
+            dou = dou * 0.027;
+        if(index_1 == 10)       // 1立方分米 = 0.000027立方市丈
+            dou = dou * 0.000027;
+        // double->QString
+        str = QString::number(dou);
+        ui->volume_lineEdit_1->setText(str);
+        ui->volume_lineEdit_2->setText(temp);
+    }
+        break;
+    case 2:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_1 == 0)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->volume_lineEdit_1->setText(str);
+            ui->volume_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 1)        // 1立方厘米 = 0.0002199692英国加仑
+            dou = dou * 0.0002199692;
+        if(index_1 == 2)        // 1立方厘米 = 0.0002641721美国液体加仑
+            dou = dou * 0.0002641721;
+        if(index_1 == 3)        // 1立方厘米 = 0.0338180588美国液体盎司
+            dou = dou * 0.0338180588;
+        if(index_1 == 4)        // 1立方厘米 = 0.0610238445立方英寸
+            dou = dou * 0.0610238445;
+        if(index_1 == 5)        // 1立方厘米 = 0.0000353147立方英尺
+            dou = dou * 0.0000353147;
+        if(index_1 == 6)        // 1立方厘米 = 0.000001308立方码
+            dou = dou * 0.000001308;
+        if(index_1 == 7)        //以下为市值
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->volume_lineEdit_1->setText(str);
+            ui->volume_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 8)        // 1立方厘米 = 0.027立方市寸
+            dou = dou * 0.027;
+        if(index_1 == 9)        // 1立方厘米 = 0.000027立方市尺
+            dou = dou * 0.000027;
+        if(index_1 == 10)       // 1立方厘米 = 0.000000027立方市丈
+            dou = dou * 0.000000027;
+        // double->QString
+        str = QString::number(dou);
+        ui->volume_lineEdit_1->setText(str);
+        ui->volume_lineEdit_2->setText(temp);
+    }
+        break;
+    case 3:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_1 == 0)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->volume_lineEdit_1->setText(str);
+            ui->volume_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 1)        // 1升 = 0.2199692英国加仑
+            dou = dou * 0.2199692;
+        if(index_1 == 2)        // 1升 = 0.2641721美国液体加仑
+            dou = dou * 0.2641721;
+        if(index_1 == 3)        // 1升 = 33.8180588美国液体盎司
+            dou = dou * 33.8180588;
+        if(index_1 == 4)        // 1升 = 61.0238445立方英寸
+            dou = dou * 61.0238445;
+        if(index_1 == 5)        // 1升 = 0.0353147立方英尺
+            dou = dou * 0.0353147;
+        if(index_1 == 6)        // 1升 = 0.001308立方码
+            dou = dou * 0.001308;
+        if(index_1 == 7)        //以下为市值
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->volume_lineEdit_1->setText(str);
+            ui->volume_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 8)        // 1升 = 27立方市寸
+            dou = dou * 27;
+        if(index_1 == 9)        // 1升 = 0.027立方市尺
+            dou = dou * 0.027;
+        if(index_1 == 10)       // 1升 = 0.000027立方市丈
+            dou = dou * 0.000027;
+        // double->QString
+        str = QString::number(dou);
+        ui->volume_lineEdit_1->setText(str);
+        ui->volume_lineEdit_2->setText(temp);
+    }
+        break;
+    case 4:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_1 == 0)
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->volume_lineEdit_1->setText(str);
+            ui->volume_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 1)        // 1毫升 = 0.0002199692英国加仑
+            dou = dou * 0.0002199692;
+        if(index_1 == 2)        // 1毫升 = 0.0002641721美国液体加仑
+            dou = dou * 0.0002641721;
+        if(index_1 == 3)        // 1毫升 = 0.0338180588美国液体盎司
+            dou = dou * 0.0338180588;
+        if(index_1 == 4)        // 1毫升 = 0.0610238445立方英寸
+            dou = dou * 0.0610238445;
+        if(index_1 == 5)        // 1毫升 = 0.0000353147立方英尺
+            dou = dou * 0.0000353147;
+        if(index_1 == 6)        // 1毫升 = 0.000001308立方码
+            dou = dou * 0.000001308;
+        if(index_1 == 7)        //以下为市值
+        {
+            dou = dou * 0;
+            str = QString::number(dou);
+            ui->volume_lineEdit_1->setText(str);
+            ui->volume_lineEdit_2->setText(str);
+            break;
+        }
+        if(index_1 == 8)        // 1毫升 = 0.027立方市寸
+            dou = dou * 0.027;
+        if(index_1 == 9)        // 1毫升 = 0.000027立方市尺
+            dou = dou * 0.000027;
+        if(index_1 == 10)       // 1毫升 = 0.000000027立方市丈
+            dou = dou * 0.000000027;
+        // double->QString
+        str = QString::number(dou);
+        ui->volume_lineEdit_1->setText(str);
+        ui->volume_lineEdit_2->setText(temp);
+    }
+        break;
+
+    default:
+        break;
+    }
 }
 
 void Widget::on_temperature_pushButton_1_clicked()
 {
-
+    QString str;
+    str = ui->temperature_lineEdit_1->text();
+    double dou = str.toDouble();
+    int index_1 = ui->temperature_comboBox_1->currentIndex();
+    int index_2 = ui->temperature_comboBox_2->currentIndex();
+    switch(index_1)
+    {
+    case 0:
+    {
+        QString temp = QString::number(dou);
+        if(index_2 == 0)        // 摄氏度=（华氏摄氏度-32）*5/9
+            dou = (dou-32) * 5/9;
+        // double->QString
+        str = QString::number(dou);
+        ui->temperature_lineEdit_1->setText(temp);
+        ui->temperature_lineEdit_2->setText(str);
+    }
+        break;
+    default:
+        break;
+    }
 }
 
 void Widget::on_temperature_pushButton_2_clicked()
 {
-
+    QString str;
+    str = ui->temperature_lineEdit_2->text();
+    double dou = str.toDouble();
+    int index_1 = ui->temperature_comboBox_1->currentIndex();
+    int index_2 = ui->temperature_comboBox_2->currentIndex();
+    switch (index_2)
+    {
+    case 0:
+    {
+        QString temp = QString::number(dou);
+        if(index_1 == 0)        //华氏摄氏度=摄氏度/1.8+32
+            dou=dou*9/5+32;
+        // double->QString
+        str = QString::number(dou);
+        ui->temperature_lineEdit_1->setText(str);
+        ui->temperature_lineEdit_2->setText(temp);
+    }
+        break;
+    default:
+        break;
+    }
 }
 
 void Widget::on_money_pushButton_1_clicked()
 {
+    QString str;
+    str = ui->money_lineEdit_1->text();
+    double dou = str.toDouble();
+    int index_1 = ui->money_comboBox_1->currentIndex();
+    int index_2 = ui->money_comboBox_2->currentIndex();
+    switch(index_1)
+    {
+    case 0:
+    {
+        QString temp = QString::number(dou);
 
+        if(index_2 == 0)        // 1人民币 = 1人民币
+            dou = dou * 1;
+        if(index_2 == 1)        // 1人民币 = 0.1464美元
+            dou = dou * 0.1464;
+        if(index_2 == 2)        // 1人民币 = 0.1925加拿大元
+            dou = dou * 0.1925;
+        if(index_2 == 3)        // 1人民币 = 0.2011澳元
+            dou = dou * 0.2011;
+        if(index_2 == 4)        // 1人民币 = 0.1240欧元
+            dou = dou * 0.1240;
+        if(index_2 == 5)        // 1人民币 = 0.1126英镑
+            dou = dou * 0.1126;
+        if(index_2 == 6)        // 1人民币 = 15.5487日元
+            dou = dou * 15.5487;
+        if(index_2 == 7)        // 1人民币 = 4.5763泰铢
+            dou = dou * 4.5763;
+        if(index_2 == 8)        // 1人民币 = 0.2001新加坡元
+            dou = dou * 0.2001;
+        if(index_2 == 9)        // 1人民币 = 1.1346港元
+            dou = dou * 1.1346;
+        if(index_2 == 10)       // 1人民币 = 4.2904新台元
+            dou = dou * 4.2904;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(temp);
+        ui->money_lineEdit_2->setText(str);
+    }
+        break;
+    case 1:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1美元 = 6.8308人民币
+            dou = dou * 6.8308;
+        if(index_2 == 1)        // 1美元 = 1美元
+            dou = dou * 1;
+        if(index_2 == 2)        // 1美元 = 1.3151加拿大元
+            dou = dou * 1.3151;
+        if(index_2 == 3)        // 1美元 = 1.374澳元
+            dou = dou * 1.374;
+        if(index_2 == 4)        // 1美元 = 0.8470欧元
+            dou = dou * 0.8470;
+        if(index_2 == 5)        // 1美元 = 0.7690英镑
+            dou = dou * 0.7690;
+        if(index_2 == 6)        // 1美元 = 106.21日元
+            dou = dou * 106.21;
+        if(index_2 == 7)        // 1美元 = 31.26泰铢
+            dou = dou * 31.26;
+        if(index_2 == 8)        // 1美元 = 1.3669新加坡元
+            dou = dou * 1.3669;
+        if(index_2 == 9)        // 1美元 = 7.7501港元
+            dou = dou * 7.7501;
+        if(index_2 == 10)        // 1美元 = 29.307新台元
+            dou = dou * 29.307;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(temp);
+        ui->money_lineEdit_2->setText(str);
+    }
+        break;
+    case 2:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1加拿大元 = 5.1941人民币
+            dou = dou * 5.1941;
+        if(index_2 == 1)        // 1加拿大元 = 0.7604美元
+            dou = dou * 0.7604;
+        if(index_2 == 2)        // 1加拿大元 = 1加拿大元
+            dou = dou * 1;
+        if(index_2 == 3)        // 1加拿大元 = 1.0448澳元
+            dou = dou * 1.0448;
+        if(index_2 == 4)        // 1加拿大元 = 0.6441欧元
+            dou = dou * 0.6441;
+        if(index_2 == 5)        // 1加拿大元 = 0.5847英镑
+            dou = dou * 0.5847;
+        if(index_2 == 6)        // 1加拿大元 = 80.7619日元
+            dou = dou * 80.7619;
+        if(index_2 == 7)        // 1加拿大元 = 23.7701泰铢
+            dou = dou * 23.7701;
+        if(index_2 == 8)        // 1加拿大元 = 1.0394新加坡元
+            dou = dou * 1.0394;
+        if(index_2 == 9)        // 1加拿大元 = 5.8932港元
+            dou = dou * 5.8932;
+        if(index_2 == 10)        // 1加拿大元 = 22.285新台元
+            dou = dou * 22.285;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(temp);
+        ui->money_lineEdit_2->setText(str);
+    }
+        break;
+    case 3:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1澳元 = 4.9715人民币
+            dou = dou * 4.9715;
+        if(index_2 == 1)        // 1澳元 = 0.7278美元
+            dou = dou * 0.7278;
+        if(index_2 == 2)        // 1澳元 = 0.9571加拿大元
+            dou = dou * 0.9571;
+        if(index_2 == 3)        // 1澳元 = 1澳元
+            dou = dou * 1;
+        if(index_2 == 4)        // 1澳元 = 0.6150欧元
+            dou = dou * 0.6150;
+        if(index_2 == 5)        // 1澳元 = 0.5593英镑
+            dou = dou * 0.5593;
+        if(index_2 == 6)        // 1澳元 = 77.1152日元
+            dou = dou * 77.1152;
+        if(index_2 == 7)        // 1澳元 = 22.701泰铢
+            dou = dou * 22.701;
+        if(index_2 == 8)        // 1澳元 = 0.9923新加坡元
+            dou = dou * 0.9923;
+        if(index_2 == 9)        // 1澳元 = 5.6281港元
+            dou = dou * 5.6281;
+        if(index_2 == 10)        // 1澳元 = 21.2537新台元
+            dou = dou * 21.2537;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(temp);
+        ui->money_lineEdit_2->setText(str);
+    }
+        break;
+    case 4:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1欧元 = 8.0644人民币
+            dou = dou * 8.0644;
+        if(index_2 == 1)        // 1欧元 = 1.1806美元
+            dou = dou * 1.1806;
+        if(index_2 == 2)        // 1欧元 = 1.5526加拿大元
+            dou = dou * 1.5526;
+        if(index_2 == 3)        // 1欧元 = 1.6261澳元
+            dou = dou * 1.6261;
+        if(index_2 == 4)        // 1欧元 = 1欧元
+            dou = dou * 1;
+        if(index_2 == 5)        // 1欧元 = 0.9094英镑
+            dou = dou * 0.9094;
+        if(index_2 == 6)        // 1欧元 = 125.3998日元
+            dou = dou * 125.3998;
+        if(index_2 == 7)        // 1欧元 = 36.9149泰铢
+            dou = dou * 36.9149;
+        if(index_2 == 8)        // 1欧元 = 1.6136新加坡元
+            dou = dou * 1.6136;
+        if(index_2 == 9)        // 1欧元 = 9.1521港元
+            dou = dou * 9.1521;
+        if(index_2 == 10)        // 1欧元 = 34.5614新台元
+            dou = dou * 34.5614;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(temp);
+        ui->money_lineEdit_2->setText(str);
+    }
+        break;
+    case 5:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1英镑 = 8.8828人民币
+            dou = dou * 8.8828;
+        if(index_2 == 1)        // 1英镑 = 1.3004美元
+            dou = dou * 1.3004;
+        if(index_2 == 2)        // 1英镑 = 1.7102加拿大元
+            dou = dou * 1.7102;
+        if(index_2 == 3)        // 1英镑 = 1.7881澳元
+            dou = dou * 1.7881;
+        if(index_2 == 4)        // 1英镑 = 1.0996欧元
+            dou = dou * 1.0996;
+        if(index_2 == 5)        // 1英镑 = 1英镑
+            dou = dou * 1;
+        if(index_2 == 6)        // 1英镑 = 137.8877日元
+            dou = dou * 137.8877;
+        if(index_2 == 7)        // 1英镑 = 40.5911泰铢
+            dou = dou * 40.5911;
+        if(index_2 == 8)        // 1英镑 = 1.7743新加坡元
+            dou = dou * 1.7743;
+        if(index_2 == 9)        // 1英镑 = 10.0635港元
+            dou = dou * 10.0635;
+        if(index_2 == 10)       // 1英镑 = 38.0032新台元
+            dou = dou * 38.0032;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(temp);
+        ui->money_lineEdit_2->setText(str);
+    }
+        break;
+    case 6:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1日元 = 0.0643人民币
+            dou = dou * 0.0643;
+        if(index_2 == 1)        // 1日元 = 0.0094美元
+            dou = dou * 0.0094;
+        if(index_2 == 2)        // 1日元 = 0.0124加拿大元
+            dou = dou * 0.0124;
+        if(index_2 == 3)        // 1日元 = 0.013澳元
+            dou = dou * 0.013;
+        if(index_2 == 4)        // 1日元 = 0.008欧元
+            dou = dou * 0.008;
+        if(index_2 == 5)        // 1日元 = 0.0073英镑
+            dou = dou * 0.0073;
+        if(index_2 == 6)        // 1日元 = 1日元
+            dou = dou * 1;
+        if(index_2 == 7)        // 1日元 = 0.2944泰铢
+            dou = dou * 0.2944;
+        if(index_2 == 8)        // 1日元 = 0.01287新加坡元
+            dou = dou * 0.01287;
+        if(index_2 == 9)        // 1日元 = 0.07298港元
+            dou = dou * 0.07298;
+        if(index_2 == 10)        // 1日元 = 0.2756新台元
+            dou = dou * 0.2756;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(temp);
+        ui->money_lineEdit_2->setText(str);
+    }
+        break;
+    case 7:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1泰铢 = 0.2185人民币
+            dou = dou * 0.2185;
+        if(index_2 == 1)        // 1泰铢 = 0.032美元
+            dou = dou * 0.032;
+        if(index_2 == 2)        // 1泰铢 = 0.0421加拿大元
+            dou = dou * 0.0421;
+        if(index_2 == 3)        // 1泰铢 = 0.0441澳元
+            dou = dou * 0.0441;
+        if(index_2 == 4)        // 1泰铢 = 0.0271欧元
+            dou = dou * 0.0271;
+        if(index_2 == 5)        // 1泰铢 = 0.0246英镑
+            dou = dou * 0.0246;
+        if(index_2 == 6)        // 1泰铢 = 3.397日元
+            dou = dou * 3.397;
+        if(index_2 == 7)        // 1泰铢 = 1泰铢
+            dou = dou * 1;
+        if(index_2 == 8)        // 1泰铢 = 0.04371新加坡元
+            dou = dou * 0.04371;
+        if(index_2 == 9)        // 1泰铢 = 0.2479港元
+            dou = dou * 0.2479;
+        if(index_2 == 10)        // 1泰铢 = 0.9362新台元
+            dou = dou * 0.9362;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(temp);
+        ui->money_lineEdit_2->setText(str);
+    }
+        break;
+    case 8:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1新加坡元 = 4.9973人民币
+            dou = dou * 4.9973;
+        if(index_2 == 1)        // 1新加坡元 = 0.7316美元
+            dou = dou * 0.7316;
+        if(index_2 == 2)        // 1新加坡元 = 0.9621加拿大元
+            dou = dou * 0.9621;
+        if(index_2 == 3)        // 1新加坡元 = 1.0078澳元
+            dou = dou * 1.0078;
+        if(index_2 == 4)        // 1新加坡元 = 0.6197欧元
+            dou = dou * 0.6197;
+        if(index_2 == 5)        // 1新加坡元 = 0.5636英镑
+            dou = dou * 0.5636;
+        if(index_2 == 6)        // 1新加坡元 = 77.7152日元
+            dou = dou * 77.7152;
+        if(index_2 == 7)        // 1新加坡元 = 22.8776泰铢
+            dou = dou * 22.8776;
+        if(index_2 == 8)        // 1新加坡元 = 1新加坡元
+            dou = dou * 1;
+        if(index_2 == 9)        // 1新加坡元 = 5.6719港元
+            dou = dou * 5.6719;
+        if(index_2 == 10)        // 1新加坡元 = 21.4191新台元
+            dou = dou * 21.4191;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(temp);
+        ui->money_lineEdit_2->setText(str);
+    }
+        break;
+    case 9:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1港元 = 0.8814人民币
+            dou = dou * 0.8814;
+        if(index_2 == 1)        // 1港元 = 0.129美元
+            dou = dou * 0.129;
+        if(index_2 == 2)        // 1港元 = 0.1697加拿大元
+            dou = dou * 0.1697;
+        if(index_2 == 3)        // 1港元 = 0.1777澳元
+            dou = dou * 0.1777;
+        if(index_2 == 4)        // 1港元 = 0.1093欧元
+            dou = dou * 0.1093;
+        if(index_2 == 5)        // 1港元 = 0.0994英镑
+            dou = dou * 0.0994;
+        if(index_2 == 6)        // 1港元 = 13.7018日元
+            dou = dou * 13.7018;
+        if(index_2 == 7)        // 1港元 = 4.0335泰铢
+            dou = dou * 4.0335;
+        if(index_2 == 8)        // 1港元 = 0.1763新加坡元
+            dou = dou * 0.1763;
+        if(index_2 == 9)        // 1港元 = 1港元
+            dou = dou * 1;
+        if(index_2 == 10)        // 1港元 = 3.7763新台元
+            dou = dou * 3.7763;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(temp);
+        ui->money_lineEdit_2->setText(str);
+    }
+        break;
+    case 10:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1新台元 = 0.2331人民币
+            dou = dou * 0.2331;
+        if(index_2 == 1)        // 1新台元 = 0.0341美元
+            dou = dou * 0.0341;
+        if(index_2 == 2)        // 1新台元 = 0.0449加拿大元
+            dou = dou * 0.0449;
+        if(index_2 == 3)        // 1新台元 = 0.0471澳元
+            dou = dou * 0.0471;
+        if(index_2 == 4)        // 1新台元 = 0.0289欧元
+            dou = dou * 0.0289;
+        if(index_2 == 5)        // 1新台元 = 0.0263英镑
+            dou = dou * 0.0263;
+        if(index_2 == 6)        // 1新台元 = 3.6283日元
+            dou = dou * 3.6283;
+        if(index_2 == 7)        // 1新台元 = 1.0681泰铢
+            dou = dou * 1.0681;
+        if(index_2 == 8)        // 1新台元 = 0.0467新加坡元
+            dou = dou * 0.0467;
+        if(index_2 == 9)        // 1新台元 = 0.2648港元
+            dou = dou * 0.2648;
+        if(index_2 == 10)        // 1新台元 = 1新台元
+            dou = dou * 1;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(temp);
+        ui->money_lineEdit_2->setText(str);
+    }
+        break;
+    default:
+        break;
+    }
 }
 
 void Widget::on_money_pushButton_2_clicked()
 {
+    QString str;
+    str = ui->money_lineEdit_2->text();
+    double dou = str.toDouble();
+    int index_1 = ui->money_comboBox_1->currentIndex();
+    int index_2 = ui->money_comboBox_2->currentIndex();
+    switch(index_1)
+    {
+    case 0:
+    {
+        QString temp = QString::number(dou);
 
+        if(index_2 == 0)        // 1人民币 = 1人民币
+            dou = dou * 1;
+        if(index_2 == 1)        // 1人民币 = 0.1464美元
+            dou = dou * 0.1464;
+        if(index_2 == 2)        // 1人民币 = 0.1925加拿大元
+            dou = dou * 0.1925;
+        if(index_2 == 3)        // 1人民币 = 0.2011澳元
+            dou = dou * 0.2011;
+        if(index_2 == 4)        // 1人民币 = 0.1240欧元
+            dou = dou * 0.1240;
+        if(index_2 == 5)        // 1人民币 = 0.1126英镑
+            dou = dou * 0.1126;
+        if(index_2 == 6)        // 1人民币 = 15.5487日元
+            dou = dou * 15.5487;
+        if(index_2 == 7)        // 1人民币 = 4.5763泰铢
+            dou = dou * 4.5763;
+        if(index_2 == 8)        // 1人民币 = 0.2001新加坡元
+            dou = dou * 0.2001;
+        if(index_2 == 9)        // 1人民币 = 1.1346港元
+            dou = dou * 1.1346;
+        if(index_2 == 10)       // 1人民币 = 4.2904新台元
+            dou = dou * 4.2904;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(str);
+        ui->money_lineEdit_2->setText(temp);
+    }
+        break;
+    case 1:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1美元 = 6.8308人民币
+            dou = dou * 6.8308;
+        if(index_2 == 1)        // 1美元 = 1美元
+            dou = dou * 1;
+        if(index_2 == 2)        // 1美元 = 1.3151加拿大元
+            dou = dou * 1.3151;
+        if(index_2 == 3)        // 1美元 = 1.374澳元
+            dou = dou * 1.374;
+        if(index_2 == 4)        // 1美元 = 0.8470欧元
+            dou = dou * 0.8470;
+        if(index_2 == 5)        // 1美元 = 0.7690英镑
+            dou = dou * 0.7690;
+        if(index_2 == 6)        // 1美元 = 106.21日元
+            dou = dou * 106.21;
+        if(index_2 == 7)        // 1美元 = 31.26泰铢
+            dou = dou * 31.26;
+        if(index_2 == 8)        // 1美元 = 1.3669新加坡元
+            dou = dou * 1.3669;
+        if(index_2 == 9)        // 1美元 = 7.7501港元
+            dou = dou * 7.7501;
+        if(index_2 == 10)        // 1美元 = 29.307新台元
+            dou = dou * 29.307;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(str);
+        ui->money_lineEdit_2->setText(temp);
+    }
+        break;
+    case 2:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1加拿大元 = 5.1941人民币
+            dou = dou * 5.1941;
+        if(index_2 == 1)        // 1加拿大元 = 0.7604美元
+            dou = dou * 0.7604;
+        if(index_2 == 2)        // 1加拿大元 = 1加拿大元
+            dou = dou * 1;
+        if(index_2 == 3)        // 1加拿大元 = 1.0448澳元
+            dou = dou * 1.0448;
+        if(index_2 == 4)        // 1加拿大元 = 0.6441欧元
+            dou = dou * 0.6441;
+        if(index_2 == 5)        // 1加拿大元 = 0.5847英镑
+            dou = dou * 0.5847;
+        if(index_2 == 6)        // 1加拿大元 = 80.7619日元
+            dou = dou * 80.7619;
+        if(index_2 == 7)        // 1加拿大元 = 23.7701泰铢
+            dou = dou * 23.7701;
+        if(index_2 == 8)        // 1加拿大元 = 1.0394新加坡元
+            dou = dou * 1.0394;
+        if(index_2 == 9)        // 1加拿大元 = 5.8932港元
+            dou = dou * 5.8932;
+        if(index_2 == 10)        // 1加拿大元 = 22.285新台元
+            dou = dou * 22.285;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(str);
+        ui->money_lineEdit_2->setText(temp);
+    }
+        break;
+    case 3:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1澳元 = 4.9715人民币
+            dou = dou * 4.9715;
+        if(index_2 == 1)        // 1澳元 = 0.7278美元
+            dou = dou * 0.7278;
+        if(index_2 == 2)        // 1澳元 = 0.9571加拿大元
+            dou = dou * 0.9571;
+        if(index_2 == 3)        // 1澳元 = 1澳元
+            dou = dou * 1;
+        if(index_2 == 4)        // 1澳元 = 0.6150欧元
+            dou = dou * 0.6150;
+        if(index_2 == 5)        // 1澳元 = 0.5593英镑
+            dou = dou * 0.5593;
+        if(index_2 == 6)        // 1澳元 = 77.1152日元
+            dou = dou * 77.1152;
+        if(index_2 == 7)        // 1澳元 = 22.701泰铢
+            dou = dou * 22.701;
+        if(index_2 == 8)        // 1澳元 = 0.9923新加坡元
+            dou = dou * 0.9923;
+        if(index_2 == 9)        // 1澳元 = 5.6281港元
+            dou = dou * 5.6281;
+        if(index_2 == 10)        // 1澳元 = 21.2537新台元
+            dou = dou * 21.2537;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(str);
+        ui->money_lineEdit_2->setText(temp);
+    }
+        break;
+    case 4:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1欧元 = 8.0644人民币
+            dou = dou * 8.0644;
+        if(index_2 == 1)        // 1欧元 = 1.1806美元
+            dou = dou * 1.1806;
+        if(index_2 == 2)        // 1欧元 = 1.5526加拿大元
+            dou = dou * 1.5526;
+        if(index_2 == 3)        // 1欧元 = 1.6261澳元
+            dou = dou * 1.6261;
+        if(index_2 == 4)        // 1欧元 = 1欧元
+            dou = dou * 1;
+        if(index_2 == 5)        // 1欧元 = 0.9094英镑
+            dou = dou * 0.9094;
+        if(index_2 == 6)        // 1欧元 = 125.3998日元
+            dou = dou * 125.3998;
+        if(index_2 == 7)        // 1欧元 = 36.9149泰铢
+            dou = dou * 36.9149;
+        if(index_2 == 8)        // 1欧元 = 1.6136新加坡元
+            dou = dou * 1.6136;
+        if(index_2 == 9)        // 1欧元 = 9.1521港元
+            dou = dou * 9.1521;
+        if(index_2 == 10)        // 1欧元 = 34.5614新台元
+            dou = dou * 34.5614;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(str);
+        ui->money_lineEdit_2->setText(temp);
+    }
+        break;
+    case 5:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1英镑 = 8.8828人民币
+            dou = dou * 8.8828;
+        if(index_2 == 1)        // 1英镑 = 1.3004美元
+            dou = dou * 1.3004;
+        if(index_2 == 2)        // 1英镑 = 1.7102加拿大元
+            dou = dou * 1.7102;
+        if(index_2 == 3)        // 1英镑 = 1.7881澳元
+            dou = dou * 1.7881;
+        if(index_2 == 4)        // 1英镑 = 1.0996欧元
+            dou = dou * 1.0996;
+        if(index_2 == 5)        // 1英镑 = 1英镑
+            dou = dou * 1;
+        if(index_2 == 6)        // 1英镑 = 137.8877日元
+            dou = dou * 137.8877;
+        if(index_2 == 7)        // 1英镑 = 40.5911泰铢
+            dou = dou * 40.5911;
+        if(index_2 == 8)        // 1英镑 = 1.7743新加坡元
+            dou = dou * 1.7743;
+        if(index_2 == 9)        // 1英镑 = 10.0635港元
+            dou = dou * 10.0635;
+        if(index_2 == 10)       // 1英镑 = 38.0032新台元
+            dou = dou * 38.0032;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(str);
+        ui->money_lineEdit_2->setText(temp);
+    }
+        break;
+    case 6:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1日元 = 0.0643人民币
+            dou = dou * 0.0643;
+        if(index_2 == 1)        // 1日元 = 0.0094美元
+            dou = dou * 0.0094;
+        if(index_2 == 2)        // 1日元 = 0.0124加拿大元
+            dou = dou * 0.0124;
+        if(index_2 == 3)        // 1日元 = 0.013澳元
+            dou = dou * 0.013;
+        if(index_2 == 4)        // 1日元 = 0.008欧元
+            dou = dou * 0.008;
+        if(index_2 == 5)        // 1日元 = 0.0073英镑
+            dou = dou * 0.0073;
+        if(index_2 == 6)        // 1日元 = 1日元
+            dou = dou * 1;
+        if(index_2 == 7)        // 1日元 = 0.2944泰铢
+            dou = dou * 0.2944;
+        if(index_2 == 8)        // 1日元 = 0.01287新加坡元
+            dou = dou * 0.01287;
+        if(index_2 == 9)        // 1日元 = 0.07298港元
+            dou = dou * 0.07298;
+        if(index_2 == 10)        // 1日元 = 0.2756新台元
+            dou = dou * 0.2756;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(str);
+        ui->money_lineEdit_2->setText(temp);
+    }
+        break;
+    case 7:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1泰铢 = 0.2185人民币
+            dou = dou * 0.2185;
+        if(index_2 == 1)        // 1泰铢 = 0.032美元
+            dou = dou * 0.032;
+        if(index_2 == 2)        // 1泰铢 = 0.0421加拿大元
+            dou = dou * 0.0421;
+        if(index_2 == 3)        // 1泰铢 = 0.0441澳元
+            dou = dou * 0.0441;
+        if(index_2 == 4)        // 1泰铢 = 0.0271欧元
+            dou = dou * 0.0271;
+        if(index_2 == 5)        // 1泰铢 = 0.0246英镑
+            dou = dou * 0.0246;
+        if(index_2 == 6)        // 1泰铢 = 3.397日元
+            dou = dou * 3.397;
+        if(index_2 == 7)        // 1泰铢 = 1泰铢
+            dou = dou * 1;
+        if(index_2 == 8)        // 1泰铢 = 0.04371新加坡元
+            dou = dou * 0.04371;
+        if(index_2 == 9)        // 1泰铢 = 0.2479港元
+            dou = dou * 0.2479;
+        if(index_2 == 10)        // 1泰铢 = 0.9362新台元
+            dou = dou * 0.9362;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(str);
+        ui->money_lineEdit_2->setText(temp);
+    }
+        break;
+    case 8:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1新加坡元 = 4.9973人民币
+            dou = dou * 4.9973;
+        if(index_2 == 1)        // 1新加坡元 = 0.7316美元
+            dou = dou * 0.7316;
+        if(index_2 == 2)        // 1新加坡元 = 0.9621加拿大元
+            dou = dou * 0.9621;
+        if(index_2 == 3)        // 1新加坡元 = 1.0078澳元
+            dou = dou * 1.0078;
+        if(index_2 == 4)        // 1新加坡元 = 0.6197欧元
+            dou = dou * 0.6197;
+        if(index_2 == 5)        // 1新加坡元 = 0.5636英镑
+            dou = dou * 0.5636;
+        if(index_2 == 6)        // 1新加坡元 = 77.7152日元
+            dou = dou * 77.7152;
+        if(index_2 == 7)        // 1新加坡元 = 22.8776泰铢
+            dou = dou * 22.8776;
+        if(index_2 == 8)        // 1新加坡元 = 1新加坡元
+            dou = dou * 1;
+        if(index_2 == 9)        // 1新加坡元 = 5.6719港元
+            dou = dou * 5.6719;
+        if(index_2 == 10)        // 1新加坡元 = 21.4191新台元
+            dou = dou * 21.4191;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(str);
+        ui->money_lineEdit_2->setText(temp);
+    }
+        break;
+    case 9:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1港元 = 0.8814人民币
+            dou = dou * 0.8814;
+        if(index_2 == 1)        // 1港元 = 0.129美元
+            dou = dou * 0.129;
+        if(index_2 == 2)        // 1港元 = 0.1697加拿大元
+            dou = dou * 0.1697;
+        if(index_2 == 3)        // 1港元 = 0.1777澳元
+            dou = dou * 0.1777;
+        if(index_2 == 4)        // 1港元 = 0.1093欧元
+            dou = dou * 0.1093;
+        if(index_2 == 5)        // 1港元 = 0.0994英镑
+            dou = dou * 0.0994;
+        if(index_2 == 6)        // 1港元 = 13.7018日元
+            dou = dou * 13.7018;
+        if(index_2 == 7)        // 1港元 = 4.0335泰铢
+            dou = dou * 4.0335;
+        if(index_2 == 8)        // 1港元 = 0.1763新加坡元
+            dou = dou * 0.1763;
+        if(index_2 == 9)        // 1港元 = 1港元
+            dou = dou * 1;
+        if(index_2 == 10)        // 1港元 = 3.7763新台元
+            dou = dou * 3.7763;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(str);
+        ui->money_lineEdit_2->setText(temp);
+    }
+        break;
+    case 10:
+    {
+        QString temp = QString::number(dou);
+
+        if(index_2 == 0)        // 1新台元 = 0.2331人民币
+            dou = dou * 0.2331;
+        if(index_2 == 1)        // 1新台元 = 0.0341美元
+            dou = dou * 0.0341;
+        if(index_2 == 2)        // 1新台元 = 0.0449加拿大元
+            dou = dou * 0.0449;
+        if(index_2 == 3)        // 1新台元 = 0.0471澳元
+            dou = dou * 0.0471;
+        if(index_2 == 4)        // 1新台元 = 0.0289欧元
+            dou = dou * 0.0289;
+        if(index_2 == 5)        // 1新台元 = 0.0263英镑
+            dou = dou * 0.0263;
+        if(index_2 == 6)        // 1新台元 = 3.6283日元
+            dou = dou * 3.6283;
+        if(index_2 == 7)        // 1新台元 = 1.0681泰铢
+            dou = dou * 1.0681;
+        if(index_2 == 8)        // 1新台元 = 0.0467新加坡元
+            dou = dou * 0.0467;
+        if(index_2 == 9)        // 1新台元 = 0.2648港元
+            dou = dou * 0.2648;
+        if(index_2 == 10)        // 1新台元 = 1新台元
+            dou = dou * 1;
+        //  double->QString
+        str = QString::number(dou);
+        ui->money_lineEdit_1->setText(str);
+        ui->money_lineEdit_2->setText(temp);
+    }
+        break;
+    default:
+        break;
+    }
 }
