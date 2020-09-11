@@ -40,6 +40,8 @@ private slots:
 
     void on_money_pushButton_2_clicked();
 
+    bool Judgt(QString str);
+
 private:
     Ui::Widget *ui;
 };
