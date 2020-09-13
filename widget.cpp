@@ -368,7 +368,7 @@ bool Widget::Judgt(QString str)
     {
         if(str[i] == "")
             return false;
-        if(str[i] >= '0' && str[i] <= '9' || str[i] == '-'|| str[i] == '+' || str[i] == '.')
+        if(str[i] >= '0' && str[i] <= '9' || str[i] == '-'|| str[i] == '+' || str[i] == '.' || str[i] == 'e')
             continue;
         else
             return false;
