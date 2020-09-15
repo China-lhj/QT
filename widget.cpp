@@ -32,6 +32,13 @@ Widget::Widget(QWidget *parent) :
     ui->temperature->setFont(ft);
     ui->money->setFont(ft);
 
+    ui->weight->setFixedSize(110,22);
+    ui->length->setFixedSize(110,22);
+    ui->area->setFixedSize(110,22);
+    ui->volume->setFixedSize(110,22);
+    ui->temperature->setFixedSize(110,22);
+    ui->money->setFixedSize(110,22);
+
     // 设置标题颜色
     ui->Sub_weight_1->setStyleSheet("background-color: rgb(0,199,140)");
     ui->Sub_length_1->setStyleSheet("background-color: rgb(0,199,140)");
@@ -176,23 +183,23 @@ Widget::Widget(QWidget *parent) :
 
     // 设置lineEdit大小
     // weight
-    ui->weight_lineEdit_1->setFixedSize(210, 21);
-    ui->weight_lineEdit_2->setFixedSize(210, 21);
+    ui->weight_lineEdit_1->setFixedSize(210, 22);
+    ui->weight_lineEdit_2->setFixedSize(210, 22);
     // length
-    ui->length_lineEdit_1->setFixedSize(210, 21);
-    ui->length_lineEdit_2->setFixedSize(210, 21);
+    ui->length_lineEdit_1->setFixedSize(210, 22);
+    ui->length_lineEdit_2->setFixedSize(210, 22);
     // area
-    ui->area_lineEdit_1->setFixedSize(210, 21);
+    ui->area_lineEdit_1->setFixedSize(210, 22);
     ui->area_lineEdit_2->setFixedSize(210, 21);
     // volume
-    ui->volume_lineEdit_1->setFixedSize(210, 21);
-    ui->volume_lineEdit_2->setFixedSize(210, 21);
+    ui->volume_lineEdit_1->setFixedSize(210, 22);
+    ui->volume_lineEdit_2->setFixedSize(210, 22);
     // temperature
-    ui->temperature_lineEdit_1->setFixedSize(210, 21);
-    ui->temperature_lineEdit_2->setFixedSize(210, 21);
+    ui->temperature_lineEdit_1->setFixedSize(210, 22);
+    ui->temperature_lineEdit_2->setFixedSize(210, 22);
     // money
-    ui->money_lineEdit_1->setFixedSize(210, 21);
-    ui->money_lineEdit_2->setFixedSize(210, 21);
+    ui->money_lineEdit_1->setFixedSize(210, 22);
+    ui->money_lineEdit_2->setFixedSize(210, 22);
 
     // 设置comboBox内容
     // weight
@@ -350,9 +357,6 @@ Widget::Widget(QWidget *parent) :
     // money
     ui->money_comboBox_1->setFixedSize(110,22);
     ui->money_comboBox_2->setFixedSize(110,22);
-
-
-
 
 }
 
